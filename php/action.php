@@ -25,4 +25,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Oopsie, le message ne s'est pas envoyé. Essaie encore.";
     }
-}git commit -m "Ajout de la récupération et envoi du mail, à tester"
+}
