@@ -3,6 +3,8 @@
 html, body {
     height: 100%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -19,6 +21,8 @@ body {
     justify-content: center;
     gap:10px;
 }
+
+
 
 /** Css relatif à la barre de menu **/
 
@@ -49,6 +53,11 @@ a{
     width: 40px;
     height: 40px;
     margin-left :5px;
+}
+
+.note, form, .content-events, h1, h2{
+    margin: 20px;
+    padding: 0;
 }
 
 /** Partie du css relatif au système de cartes **/
