@@ -10,7 +10,9 @@ html, body {
 body {
     display : flex; 
     flex-direction: column; 
-    font-size: medium
+    font-size: medium;
+    font-size: clamp(0.6rem,3vw,1rem);
+    
 }
 
 .team-list{
