@@ -57,6 +57,15 @@ a{
     margin-left :5px;
 }
 
+.content{
+    display: flex;
+    flex-grow: 1;
+    overflow-x: hidden; /* pas de scroll horizontal */
+    overflow-y: scroll; /* Garde le scroll verticale */
+    scrollbar-width: none; /* pas de scrollbar */
+    flex-flow: column nowrap;
+}
+
 .note, form, .content-events, h1, h2{
     margin: 20px;
     padding: 0;
