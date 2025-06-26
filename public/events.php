@@ -40,9 +40,6 @@ $WebPage -> appendContent("
                 </div>
             </div>
         </div>
-        <footer>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
-        </footer>
 ");
 
 echo $WebPage -> toHTML();

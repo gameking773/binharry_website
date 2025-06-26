@@ -187,6 +187,9 @@ class WebPage
                 <body>
                     $this->body
                 </body>
+                <footer>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
+                </footer>
             </html>
         HTML;
 
