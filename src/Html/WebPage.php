@@ -20,6 +20,7 @@ class WebPage
         $this->title = $title;
         $this->head = "";
         $this->body = "";
+        $this->appendCssUrl("style/style.css");
     }
 
     /**
@@ -157,7 +158,6 @@ class WebPage
      */
     public function toHTML(): string
     {
-
         $page = <<<HTML
             <!doctype html>
             <html lang="fr">
