@@ -7,12 +7,6 @@ html, body {
     margin: 0;
 }
 
-body {
-    display : flex; 
-    flex-direction: column; 
-    font-size: medium
-}
-
 .team-list{
     display: flex;
     flex-direction: column;
@@ -22,42 +16,42 @@ body {
     gap:10px;
 }
 
-
-
 /** Css relatif à la barre de menu **/
-
 header{
-    background-color: #0087ac;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    position:fixed;
+    width:100%;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.content{
+    padding-top:8%;
 }
 
 li{
     list-style: none;
-    margin-right: 20px;
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
 }
 
 a{
     text-decoration: none;
-    color : black;
     font-weight:bold;
-}
-
-.logo{
-    width: 40px;
-    height: 40px;
-    margin-left :5px;
+    color:#00BFF3;
 }
 
 .note, form, .content-events, h1, h2{
     margin: 20px;
     padding: 0;
+}
+
+/** Footer **/
+footer {
+    display: flex;
+    background-color: #0087ac;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    margin-top: 10px;
+    font-size: x-small;
 }
 
 /** Partie du css relatif au système de cartes **/
@@ -137,16 +131,4 @@ form{
     font-size: xx-small;
     color: grey;
     margin-top: 10px;
-}
-
-/** Footer **/
-footer {
-    display: flex;
-    background-color: #0087ac;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    margin-top: 10px;
-    font-size: x-small;
 }
