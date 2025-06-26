@@ -23,8 +23,42 @@ header{
     background-color: rgba(255,255,255, 0.5);
 }
 
+.wrapper{
+    display:flex;
+}
+
+.header__items ul{
+    font-size:50px;
+}
+
+.header__items ul{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+}
+
+img{
+    height:120px;
+    width:auto;
+}
+
+.header__logo, .header__items{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__items ul{
+    justify-content: space-evenly;
+}
+
+header{
+    height:150px;
+}
+
 .content{
-    padding-top:8%;
+    padding-top:15%;
 }
 
 li{
@@ -44,14 +78,9 @@ a{
 
 /** Footer **/
 footer {
-    display: flex;
-    background-color: #0087ac;
+    background-color: #024EAE;
     color: white;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    margin-top: 10px;
-    font-size: x-small;
+    padding: 50px;
 }
 
 /** Partie du css relatif au système de cartes **/
