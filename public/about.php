@@ -5,9 +5,7 @@ use Html\WebPage as WebPage;
 
 $WebPage = new WebPage("À propos");
 
-$WebPage -> appendContent("
-        <div class='content'>
-            <h1>A propos</h1>
+$WebPage -> appendContent("<h1>A propos</h1>
             <h2>L'équipe</h2>
             <ul class='team-list'>
                 <li>Votre dévoué Président: Khalil El Kadiri</li>
@@ -27,10 +25,6 @@ $WebPage -> appendContent("
                 <input type='submit' value='Envoyer' class='submit-button'>       
             </form>
             <p class='note'>Notez que ce formulaire ne sera très certainement ni lu, ni pris en compte.</p>
-        </div>
-        <footer>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
-        </footer>
 ");
 
 echo $WebPage -> toHTML();
