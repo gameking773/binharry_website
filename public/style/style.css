@@ -26,7 +26,7 @@ body {
 
 /** Css relatif à la barre de menu **/
 
-.menu{
+header{
     background-color: #0087ac;
     display: flex;
     flex-direction: row;

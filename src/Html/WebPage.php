@@ -21,6 +21,18 @@ class WebPage
         $this->head = "";
         $this->body = "";
         $this->appendCssUrl("style/style.css");
+        $this->appendContent("
+<header>
+    <ul>
+        <li><a href='index.php'>
+            <img src='img/logo_binharry.png' alt='Logo du BDE' class='logo'>
+            Home
+        </a></li>
+        <li><a href='events.php'>Événements</a></li>
+        <li><a href='about.php'>À propos</a></li>
+    </ul>
+</header>
+        ");
     }
 
     /**

@@ -6,15 +6,7 @@ use Html\WebPage as WebPage;
 
 $WebPage = new WebPage("Bin'Harry");
 
-$WebPage -> appendContent("<nav class='menu'>
-            <img src='img/logo_binharry.png' alt='Logo du BDE' class='logo'>
-            <ul>
-                <li><a href='index.php'>Home</a></li>
-                <li><a href='events.php'>Événements</a></li>
-                <li><a href='about.php'>À propos</a></li>
-            </ul>
-        </nav>
-
+$WebPage -> appendContent("
         <div class='content'>
             <h1>Le site officiel de votre BDE</h1>
             
