@@ -21,24 +21,6 @@ class WebPage
         $this->head = "";
         $this->body = "";
         $this->appendCssUrl("style/style.css");
-        $this->appendContent("
-
-<header>
-    <div class='wrapper'>
-        <div class='header__logo'>
-            <a href='index.php'>
-                <img src='img/logo_binharry_rec.png' alt='Logo du BDE' class='logo'>
-            </a>
-        </div>
-        <div class='header__items'>
-            <ul>
-                <li><a href='events.php'>Events</a></li>
-                <li><a href='about.php'>Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
-        ");
     }
 
     /**
@@ -185,6 +167,21 @@ class WebPage
                     $this->head
                 </head>
                 <body>
+                    <header>
+                        <div class='wrapper'>
+                            <div class='header__logo'>
+                                <a href='index.php'>
+                                    <img src='img/logo_binharry_rec.png' alt='Logo du BDE' class='logo'>
+                                </a>
+                            </div>
+                            <div class='header__items'>
+                                <ul>
+                                    <li><a href='events.php'>Events</a></li>
+                                    <li><a href='about.php'>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
                     <div class='content'>
                         $this->body
                     </div>
