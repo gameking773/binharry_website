@@ -11,7 +11,7 @@ $WebPage -> appendContent("<nav class='menu'>
             <ul>
                 <li><a href='index.php'>Home</a></li>
                 <li><a href='events.php'>Événements</a></li>
-                <li><a href='about.html'>À propos</a></li>
+                <li><a href='about.php'>À propos</a></li>
             </ul>
         </nav>
         <h1>Les évènements organisés par votre BDE</h1>
