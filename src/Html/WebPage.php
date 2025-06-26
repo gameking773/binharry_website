@@ -185,7 +185,9 @@ class WebPage
                     $this->head
                 </head>
                 <body>
-                    $this->body
+                    <div class='content'>
+                        $this->body
+                    </div>
                 </body>
                 <footer>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
