@@ -10,7 +10,7 @@ $WebPage -> appendContent("<nav class='menu'>
             <img src='img/logo_binharry.png' alt='Logo du BDE' class='logo'>
             <ul>
                 <li><a href='index.php'>Home</a></li>
-                <li><a href='evenement.php'>Événements</a></li>
+                <li><a href='events.php'>Événements</a></li>
                 <li><a href='about.html'>À propos</a></li>
             </ul>
         </nav>
