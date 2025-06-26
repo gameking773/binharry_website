@@ -188,10 +188,10 @@ class WebPage
                     <div class='content'>
                         $this->body
                     </div>
+                    <footer>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
+                    </footer>
                 </body>
-                <footer>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
-                </footer>
             </html>
         HTML;
 
