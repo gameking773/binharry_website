@@ -182,11 +182,14 @@ class WebPage
                             </div>
                         </div>
                     </header>
+                    <hr class="header__line">
                     <div class='content'>
                         $this->body
                     </div>
                     <footer>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
+                        </p>
                     </footer>
                 </body>
             </html>

@@ -2,7 +2,7 @@
 
 html, body {
     height: 100%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -22,6 +22,19 @@ body {
     gap:10px;
 }
 
+.page_info{
+    color:white;
+    background-color: #024EAE;
+    font-size:60px;
+    text-align:center;
+    padding:2%;
+}
+
+.content{
+    font-size:18px;
+    padding-bottom: 60px;
+}
+
 /** Css relatif à la barre de menu **/
 header{
     width:100%;
@@ -29,20 +42,24 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height:150px;
 }
 
-.wrapper{
-    display:flex;
-}
-
-.header__items ul{
+.header__items ul, .wrapper{
     font-size:50px;
-}
-
-.header__items ul{
     flex:1;
     display:flex;
     flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.header__line{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00bff3;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 img{
@@ -57,14 +74,6 @@ img{
     align-items: center;
 }
 
-.header__items ul{
-    justify-content: space-evenly;
-}
-
-header{
-    height:150px;
-}
-
 li{
     list-style: none;
 }
@@ -75,20 +84,22 @@ a{
     color:#00BFF3;
 }
 
-.note, form, .content-events, h1, h2{
+.note, form, .content-events, h2{
     margin: 20px;
     padding: 0;
 }
 
 /** Footer **/
-footer {
+footer{
+    position: fixed;
     display: flex;
     background-color: #024EAE;
     color: white;
     text-align: center;
     bottom: 0;
-    margin-top: 10px;
-    padding: 10px;
+    width:100%;
+    padding-left:1%;
+    padding-right:1%;
 }
 
 /** Partie du css relatif au système de cartes **/
@@ -147,13 +158,24 @@ footer {
 }
 
 /** Formulaire de contact **/
+
 form{
     display: flex;
     flex-direction: column;
-    background-color: #00bff3;
+    border-color:#00bff3;
+    border-style: solid;
     padding: 20px;
     border-radius: 10px;
 }
+
+form label{
+    padding-top:10px;
+}
+
+textarea{
+    resize: none;
+}
+
 .submit-button{
     width: 100px;
     height: 30px;
@@ -164,6 +186,7 @@ form{
     cursor: pointer;
     margin-top: 10px;
 }
+
 .note{
     font-size: xx-small;
     color: grey;
