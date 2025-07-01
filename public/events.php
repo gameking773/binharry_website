@@ -6,7 +6,7 @@ use Html\WebPage as WebPage;
 
 $WebPage = new WebPage("Événements");
 
-$WebPage -> appendContent("<h1>Les évènements organisés par votre BDE</h1>
+$WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
             <div class='content-events'>
                 <div class='card-container'>
                     <article class='card' id='Event1'>

@@ -5,7 +5,7 @@ use Html\WebPage as WebPage;
 
 $WebPage = new WebPage("À propos");
 
-$WebPage -> appendContent("<h1>A propos</h1>
+$WebPage -> appendContent("<h1 class='page_info'>CONTACT</h1>
             <h2>L'équipe</h2>
             <ul class='team-list'>
                 <li>Votre dévoué Président: Khalil El Kadiri</li>
