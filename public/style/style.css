@@ -154,13 +154,24 @@ footer {
 }
 
 /** Formulaire de contact **/
+
 form{
     display: flex;
     flex-direction: column;
-    background-color: #00bff3;
+    border-color:#00bff3;
+    border-style: solid;
     padding: 20px;
     border-radius: 10px;
 }
+
+form label{
+    padding-top:10px;
+}
+
+textarea{
+    resize: none;
+}
+
 .submit-button{
     width: 100px;
     height: 30px;
@@ -171,6 +182,7 @@ form{
     cursor: pointer;
     margin-top: 10px;
 }
+
 .note{
     font-size: xx-small;
     color: grey;
