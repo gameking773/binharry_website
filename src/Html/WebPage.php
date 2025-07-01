@@ -182,6 +182,7 @@ class WebPage
                             </div>
                         </div>
                     </header>
+                    <hr class="header__line">
                     <div class='content'>
                         $this->body
                     </div>
