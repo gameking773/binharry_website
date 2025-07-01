@@ -2,7 +2,7 @@
 
 ## Lancement du serveur de test
 
-Sous **Windows**, utiliser la commande suivante :
+Sous **Windows**, utiliser la commande suivante (dans le dossier public/) :
 
     php -S localhost:8000
 
