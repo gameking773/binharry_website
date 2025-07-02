@@ -13,5 +13,11 @@
             "email": "ruddy.gobillard@outlook.fr"
         }
     ],
-    "require": {}
+    "require": {},
+	"scripts": {
+		"start": [
+			"Composer\\Config::disableProcessTimeout",
+			"bin/run-server.bat"
+		]
+	}
 }
