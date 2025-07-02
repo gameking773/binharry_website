@@ -1,6 +1,7 @@
 <?php
 
 use Html\WebPage as WebPage;
+use Database\MyPdo as MyPdo;
 
 $WebPage = new WebPage("Bin'Harry");
 

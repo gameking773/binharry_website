@@ -1,5 +1,5 @@
 {
-    "name": "gamer/binharry_website",
+    "name": "binharry/website",
     "description": "Site vitrine du BDE",
     "type": "project",
     "autoload": {
@@ -14,10 +14,10 @@
         }
     ],
     "require": {},
-	"scripts": {
-		"start": [
-			"Composer\\Config::disableProcessTimeout",
-			"bin/run-server.bat"
-		]
-	}
+    "scripts": {
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.bat"
+        ]
+    }
 }
