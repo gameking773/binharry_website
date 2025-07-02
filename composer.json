@@ -1,0 +1,17 @@
+{
+    "name": "gamer/binharry_website",
+    "description": "Site vitrine du BDE",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rainbow51",
+            "email": "ruddy.gobillard@outlook.fr"
+        }
+    ],
+    "require": {}
+}
