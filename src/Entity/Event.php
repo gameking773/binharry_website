@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Entity;
 
+use \DateTime as DateTime;
+
 class Event
 {
     private int $eventId;
@@ -100,6 +102,14 @@ class Event
         $this->afficheId = $afficheId;
 
         return $this;
+    }
+
+    public function __construct(int $eventId, String $eventNom, DateTime $eventDate, String $eventDesc, ?int $afficheId){
+        $this->eventId = $eventId;
+        $this->eventNom = $eventNom;
+        $this->eventDate = clone $eventDate;
+        $this->eventDesc = $eventDesc;
+        $this->afficheId = $afficheId;
     }
 
     /**

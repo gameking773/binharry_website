@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Entity\Collection;
 
+use Database\MyPdo as MyPDO;
+use Entity\Event as Event;
+use \DateTime as DateTime;
+use PDO;
+
 class EventCollection
 {
     /**
@@ -21,11 +26,28 @@ class EventCollection
         );
 
         $stmt->execute();
-        $stmt->setFetchMode(PDO::FETCH_CLASS, Event::class);
-        if (($listeEvent = $stmt->fetchAll()) !== false) {
-            return $listeEvent;
+        $listeChamps = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        $listeEvent = [];
+
+        foreach ($listeChamps as $champs) {
+            $eventDate = new DateTime($champs['eventDate']);
+
+            $event = new Event(
+                $champs['eventId'],
+                $champs['eventNom'],
+                $eventDate,
+                $champs['eventDesc'],
+                $champs['afficheId']
+            );
+
+            $listeEvent[] = $event;
         }
 
-        return [];
+        //if (($listeEvent = $stmt->fetchAll()) !== false) {
+        //    return $listeEvent;
+        //}
+
+        return $listeEvent;
     }
 };
