@@ -1,10 +1,12 @@
 <?php
 
 use Html\WebPage as WebPage;
+use Entity\Collection\EventCollection as EventCollection;
 
 $WebPage = new WebPage("Événements");
 
-$WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
+/** ancienne version
+$WebPage -> appendContent("
                 <div class='content-events'>
                     <div class='card-container'>
                         <article class='card' id='Event1'>
@@ -33,7 +35,31 @@ $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
                                 <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
                             </div>
                         </article> 
+                    </div>");
+*/
+
+$WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
+    <div class='card_list'>");
+
+foreach (EventCollection::findAll() as $event){
+    $WebPage -> appendContent("
+        <a>
+            <div class='card'>
+                <div class='card_upper'>
+                    <img>
+                </div>
+                <div class='card_lower'>
+                    <div class='card_desc'>
+                        <p></p>
                     </div>
-                </div>");
+                    <div class='card_date'>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </a>");
+}
+
+$WebPage -> appendContent("</div>");
 
 echo $WebPage -> toHTML();
