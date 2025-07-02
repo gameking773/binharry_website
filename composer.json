@@ -1,0 +1,23 @@
+{
+    "name": "binharry/website",
+    "description": "Site vitrine du BDE",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rainbow51",
+            "email": "ruddy.gobillard@outlook.fr"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.bat"
+        ]
+    }
+}
