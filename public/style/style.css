@@ -104,6 +104,7 @@ footer{
 
 /** Partie du css relatif au système de cartes **/
 
+/** ancienne version
 .card {
     position: relative;
     color:white;
@@ -131,6 +132,50 @@ footer{
 }
 .Readmore{
     color:grey;
+}
+*/
+
+.card_list{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+.card{
+    display:flex;
+    width:500px;
+    height:600px;
+    flex-direction:column;
+    border-radius: 5px;
+    border-style:solid;
+    border-color:#00bff3
+}
+
+.card:hover{
+    border-color:#0087ac;
+}
+
+.card_upper{
+    display:flex;
+    flex:1;
+    background:red;
+}
+
+.card_lower{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+}
+
+.card_desc{
+    display:flex;
+    flex:1;
+    background:yellow;
+}
+
+.card_date{
+    display:flex;
+    background:blue;
 }
 
 /** Evènements **/
