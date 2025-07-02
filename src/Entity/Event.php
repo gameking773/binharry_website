@@ -122,9 +122,9 @@ class Event
         $stmt->execute();
 
         $stmt->setFetchMode(PDO::FETCH_CLASS, Event::class);
-        if (($event = $stmt->fetch()) === false) {
-            throw new EntityNotFoundException();
-        }
+        //if (($event = $stmt->fetch()) === false) {
+        //    throw new EntityNotFoundException();
+        //}
 
         return $event;
     }
