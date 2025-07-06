@@ -14,7 +14,7 @@ $WebPage -> appendContent("<h1 class='page_info'>CONTACT</h1>
                     <li>Votre Designer d'affiches & CM: Ruddy Gobillard</li> 
                 </ul>
                 <h2>Nous contacter</h2>
-                <form action='../php/action.php' method='post'>
+                <form action='action.php' method='post' class='about_form'>
                     <label for='name'>Nom:</label>
                     <input type='text' id='name' name='name' required><br>
                     <label for='email'>Email:</label>           
