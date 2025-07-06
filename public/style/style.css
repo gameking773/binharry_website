@@ -84,9 +84,19 @@ a{
     color:#00BFF3;
 }
 
-.note, form, .content-events, h2{
+.note, .about_form, .content-events, h2{
     margin: 20px;
     padding: 0;
+}
+
+.input_header{
+    display:flex;
+    height:60px;
+    width:320px;
+    font-size:18px;
+    margin:50px;
+    border-radius:5px;
+    border-color:#00BFF3;
 }
 
 /** Footer **/
@@ -204,7 +214,7 @@ footer{
 
 /** Formulaire de contact **/
 
-form{
+.about_form{
     display: flex;
     flex-direction: column;
     border-color:#00bff3;
@@ -213,7 +223,7 @@ form{
     border-radius: 10px;
 }
 
-form label{
+.about_form label{
     padding-top:10px;
 }
 

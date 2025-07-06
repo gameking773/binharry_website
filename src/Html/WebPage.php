@@ -174,6 +174,11 @@ class WebPage
                                     <img src='img/logo_binharry_rec.png' alt='Logo du BDE' class='logo'>
                                 </a>
                             </div>
+                            <div class='header__bar'>
+                                <form action="action.php" method="get">
+                                    <input type="text" placeholder="" class='input_header'>
+                                </form>
+                            </div>
                             <div class='header__items'>
                                 <ul>
                                     <li><a href='events.php'>Events</a></li>
