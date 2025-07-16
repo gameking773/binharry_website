@@ -112,6 +112,23 @@ footer{
     padding-right:1%;
 }
 
+/** Partie design de fond */
+
+.page_top{
+    display:flex;
+    flex-direction:column;
+    padding-top:10vh;
+    width:100%;
+}
+
+.page_top h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:200;
+    color:#00BFF3;
+    font-size:212px;
+    text-align: center;
+}
+
 /** Partie du css relatif au système de cartes **/
 
 /** ancienne version
