@@ -1,6 +1,7 @@
 <?php
 
 use Html\WebPage as WebPage;
+use Entity\Event as Event;
 use Entity\Collection\EventCollection as EventCollection;
 
 $WebPage = new WebPage("Événements");
@@ -42,8 +43,9 @@ $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
     <div class='card_list'>");
 
 foreach (EventCollection::findAll() as $event){
+    $eventId = $event->getEventId();
     $WebPage -> appendContent("
-        <a>
+        <a href='event.php?eventId={$eventId}'>
             <div class='card'>
                 <div class='card_upper'>
                     <img>
