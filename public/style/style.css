@@ -102,9 +102,17 @@ a{
 
 /** Footer **/
 footer{
-    position: fixed;
     display: flex;
-    background-color: #024EAE;
+    background: conic-gradient(
+        from 0 at 50% 25%,
+        #ffffff 85deg,
+        #3578be 30deg 95deg,
+        #065abc 30deg 265deg,
+        #3578be 240deg 275deg,
+        #ffffff 240deg
+    );
+    image-rendering: smooth;
+    padding-top:25%;
     color: white;
     text-align: center;
     bottom: 0;
