@@ -12,6 +12,16 @@ $WebPage -> appendContent("<div class='page_top'>
                 </div>
                 <div class='about_info'>
                     <h1>INFORMATIONS</h1>
+                    <ul>
+                        <li>
+                            <p>Adresse mail</p>
+                            <p>bdebinharry@gmail.com</p>
+                        </li>
+                        <li>
+                            <p>Localisation</p>
+                            <p>Bâtiment D, 2ième étage</p>
+                        </li>
+                    </ul>
                 </div>
                 
                 <h2>Nous contacter</h2>
