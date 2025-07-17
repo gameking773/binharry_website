@@ -118,7 +118,7 @@ class Event
      * @param $id int id to search
      * @return Event that corresponds to the id
      */
-    public static function findById(int $id): Genre
+    public static function findById(int $id): Event
     {
         $stmt = MyPDO::getInstance()->prepare(
             <<<'SQL'

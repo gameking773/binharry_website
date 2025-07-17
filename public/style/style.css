@@ -5,6 +5,7 @@ html, body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -101,15 +102,93 @@ a{
 
 /** Footer **/
 footer{
-    position: fixed;
+    background: conic-gradient(
+    from 0 at 50% 25%,
+    #ffffff 85deg,
+    #3578be 30deg 95deg,
+    #065abc 30deg 265deg,
+    #3578be 240deg 275deg,
+    #ffffff 240deg
+    );
     display: flex;
-    background-color: #024EAE;
+    image-rendering: smooth;
+    padding-top:25%;
+    margin-top:10%;
     color: white;
     text-align: center;
-    bottom: 0;
     width:100%;
     padding-left:1%;
     padding-right:1%;
+}
+
+/** Partie design de fond */
+
+.page_top{
+    display:flex;
+    flex-direction:column;
+    padding-top:10vh;
+    width:100%;
+}
+
+.page_top h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:200;
+    color:#00BFF3;
+    font-size:212px;
+    text-align: center;
+}
+
+.about_info{
+    margin-top:-1px;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    background:#00BFF3;
+    flex-direction:column;
+    font-size:48px;
+}
+
+.about_info h2, .about_form_gradiant h2{
+    color:white;
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:200;
+    font-size:124px;
+}
+
+.about_info li{
+    display:flex;
+    color:white;
+    justify-content: space-between;
+}
+
+.about_info li > p:first-of-type{
+    font-weight: bold;
+}
+
+.about_form_gradiant{
+    padding-top:25%;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    background: linear-gradient(4deg, rgba(2, 78, 174, 1) 50%, rgb(0, 190, 243) 50.5%);
+}
+
+.about_form_box{
+    display:flex;
+    color:white;
+    flex-direction:column;
+    background: #024EAE;
+}
+
+.about_form_gradiant_end{
+    padding-top:25%;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(2, 78, 174, 1) 61.5%);
 }
 
 /** Partie du css relatif au système de cartes **/
