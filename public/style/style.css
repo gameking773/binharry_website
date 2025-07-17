@@ -139,10 +139,13 @@ footer{
     font-size:48px;
 }
 
-.about_info h1{
+.about_info h2, .about_form_gradiant h2{
+    color:white;
+}
+
+h2{
     font-family: "Bebas Neue", sans-serif;
     font-weight:200;
-    color:white;
     font-size:124px;
 }
 
@@ -150,12 +153,33 @@ footer{
     display:flex;
     color:white;
     justify-content: space-between;
-    padding-left:25%;
-    padding-right:25%;
 }
 
 .about_info li > p:first-of-type{
     font-weight: bold;
+}
+
+.about_form_gradiant{
+    padding-top:25%;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    background: linear-gradient(4deg, rgba(2, 78, 174, 1) 50%, rgb(0, 190, 243) 50.5%);
+}
+
+.about_form_box{
+    display:flex;
+    color:white;
+    flex-direction:column;
+    background: #024EAE;
+}
+
+.about_form_gradiant_end{
+    padding-top:25%;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(2, 78, 174, 1) 61.5%);
 }
 
 /** Partie du css relatif au système de cartes **/
