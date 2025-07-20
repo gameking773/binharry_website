@@ -6,6 +6,7 @@ namespace Entity;
 
 use Database\MyPdo;
 use \DateTime as DateTime;
+use Entity\Exception\EntityNotFoundException;
 use PDO;
 
 class Event

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Entity\Exception\EntityNotFoundException;
 use Html\WebPage as WebPage;
 use Entity\Event as Event;
 
