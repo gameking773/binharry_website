@@ -134,11 +134,24 @@ class Event
         $stmt->bindParam(1, $id);
         $stmt->execute();
 
+        /**
         $stmt->setFetchMode(PDO::FETCH_CLASS, Event::class);
         if (($event = $stmt->fetch()) === false) {
             throw new EntityNotFoundException();
         }
+         */
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$row) {
+            throw new EntityNotFoundException();
+        }
 
-        return $event;
+
+        return new Event(
+            $row['eventId'],
+            $row['eventNom'],
+            new DateTime($row['eventDate']),
+            $row['eventDesc'],
+            $row['afficheId']
+        );
     }
 };

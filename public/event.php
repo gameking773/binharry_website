@@ -22,5 +22,4 @@ try {
 
 $eventName = $event -> getEventNom();
 
-$WebPade = new WebPage("Evènement - $eventName");
-
+$WebPage = new WebPage("Evènement - $eventName");
