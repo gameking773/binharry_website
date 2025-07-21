@@ -24,8 +24,9 @@ $eventName = $event -> getEventNom();
 $eventDate = $event -> getEventDate();
 $eventDesc = $event -> getEventDesc();
 $idAffiche = $event -> getAfficheId();
+
 if ($idAffiche == NULL) {
-    $afficheJpeg = "public/img/affiche_placeholder.png";
+    $afficheJpeg = '/img/affiche_placeholder.png';
 }
 else {
     $affiche = new \Entity\Affiche()->findById($idAffiche);
@@ -37,7 +38,7 @@ $webpage = new WebPage("Evènement - $eventName");
 $webpage->appendContent(<<<HTML
 <h1>{$eventName} - </h1>
     <div class="content">
-        <div class="affiche"><img src="{echo $afficheJpeg;}" alt="Affiche de l'évènement"></div>
+        <div class="affiche"><img src="$afficheJpeg" alt="Affiche de l'évènement"></div>
         <div class="description">{$eventDesc}</div>
     </div>
 HTML
