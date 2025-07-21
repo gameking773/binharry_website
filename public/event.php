@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Entity\Exception\EntityNotFoundException;
 use Html\WebPage as WebPage;
 use Entity\Event as Event;
+use Entity\Affiche as Affiche;
 
 $eventId = intval($_GET["eventId"]);
 
@@ -25,23 +26,26 @@ $eventDate = $event -> getEventDate();
 $eventDesc = $event -> getEventDesc();
 $idAffiche = $event -> getAfficheId();
 
-if ($idAffiche == NULL) {
-    $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
-}
-else {
-    $affiche = new \Entity\Affiche()->findById($idAffiche);
-    $afficheJpeg = $affiche->getJpeg();
-}
-
 $webpage = new WebPage("Evènement - $eventName");
 
 $webpage->appendContent(<<<HTML
-<h1>{$eventName} - </h1>
+    <h1>{$eventName} - </h1>
     <div class="content">
-        <div class="affiche">{$afficheJpeg}</div>
-        <div class="description">{$eventDesc}</div>
+    <div class="affiche">
+    HTML
+);
+
+if ($idAffiche !== NULL){
+    $webpage -> appendContent("<img src='affiche.php?afficheId={idAffiche}' alt='cover'>");
+} else {
+    $webpage -> appendContent("<img src='affiche.php' alt='cover'>");
+}
+
+$webpage->appendContent(<<<HTML
+        </div>
+    <div class="description">{$eventDesc}</div>
     </div>
-HTML
+    HTML
 );
 
 echo $webpage->toHTML();
