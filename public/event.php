@@ -21,5 +21,21 @@ try {
 }
 
 $eventName = $event -> getEventNom();
+$eventDate = $event -> getEventDate();
+$eventDesc = $event -> getEventDesc();
+$idAffiche = $event -> getAfficheId();
+$affiche = new \Entity\Affiche()->findById($idAffiche);
+$afficheJpeg = $affiche -> getJpeg();
 
-$WebPage = new WebPage("Evènement - $eventName");
+$webpage = new WebPage("Evènement - $eventName");
+
+$webpage->appendContent(<<<HTML
+<h1>{$eventName} - {$eventDate}</h1>
+    <div class="content">
+        <div class="affiche">{$afficheJpeg}</div>
+        <div class="description">{$eventDesc}</div>
+    </div>
+HTML
+);
+
+echo $webpage->toHTML();
