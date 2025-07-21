@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Entity;
 
+use Database\MyPdo;
+use Entity\Exception\EntityNotFoundException;
+use PDO;
+
 class Affiche
 {
     private int $afficheId;
@@ -15,25 +19,30 @@ class Affiche
      * @param $id int id to search
      * @return Affiche that corresponds to the id
      */
-    public static function findById(int $id): Genre
+    public static function findById(?int $id): Affiche|NULL
     {
-        $stmt = MyPDO::getInstance()->prepare(
-            <<<'SQL'
-                SELECT afficheId, jpeg
-                FROM evenement
-                WHERE afficheId = ?
-                SQL
-        );
+        if($id == NULL){
+            return NULL;
+        }
+        else {
+            $stmt = MyPDO::getInstance()->prepare(
+                <<<'SQL'
+                    SELECT afficheId, jpeg
+                    FROM evenement
+                    WHERE afficheId = ?
+                    SQL
+            );
 
-        $stmt->bindParam(1, $id);
-        $stmt->execute();
+            $stmt->bindParam(1, $id);
+            $stmt->execute();
 
-        $stmt->setFetchMode(PDO::FETCH_CLASS, Affiche::class);
-        //if (($affiche = $stmt->fetch()) === false) {
-        //    throw new EntityNotFoundException();
-        //}
+            $stmt->setFetchMode(PDO::FETCH_CLASS, Affiche::class);
+            if (($affiche = $stmt->fetch()) === false) {
+                throw new EntityNotFoundException();
+            }
 
-        return $affiche;
+            return $affiche;
+        }
     }
 
     /**
