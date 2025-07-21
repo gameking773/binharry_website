@@ -19,10 +19,10 @@ class Affiche
      * @param $id int id to search
      * @return Affiche that corresponds to the id
      */
-    public static function findById(?int $id): Affiche|NULL
+    public static function findById(?int $id): Affiche
     {
         if($id == NULL){
-            return NULL;
+            throw new EntityNotFoundException();
         }
         else {
             $stmt = MyPDO::getInstance()->prepare(
