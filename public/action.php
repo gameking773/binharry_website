@@ -1,5 +1,7 @@
 <?php
-declare(strict_types=1); 
+declare(strict_types=1);
+
+use Html\WebPage;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupération et nettoyage des données du formulaire
@@ -25,4 +27,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Oopsie, le message ne s'est pas envoyé. Essaie encore.";
     }
+}
+else{
+    $search = htmlspecialchars($_GET["search"]);
+
+    if (empty($search)) {
+        header('Location: index.php');
+        exit();
+    }
+
+    $webpage = new WebPage("Résultat de la recherche : $search");
+
+    if ($search == "sandron") {
+        $webpage->appendContent("<p>Sandron/</p>");
+    }
+    else {
+        $webpage->appendContent("<p>Nothing to see here, try again</p>");
+    }
+
+    echo $webpage->toHtml();
 }

@@ -178,7 +178,7 @@ class WebPage
                             </div>
                             <div class='header__bar'>
                                 <form action="action.php" method="get">
-                                    <input type="text" placeholder="" class='input_header'>
+                                    <input type="text" id="search" name="search" placeholder="" class='input_header'>
                                 </form>
                             </div>
                             <div class='header__items'>
