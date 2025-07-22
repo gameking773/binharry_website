@@ -45,6 +45,7 @@ $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
 foreach (EventCollection::findAll() as $event){
     $eventId = $event->getEventId();
     $idAffiche = $event -> getAfficheId();
+    $eventName = $event -> getEventNom();
 
     if ($idAffiche == NULL) {
         $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
@@ -57,12 +58,12 @@ foreach (EventCollection::findAll() as $event){
     $WebPage -> appendContent("
         <a href='event.php?eventId={$eventId}'>
             <div class='card'>
-                <div class='card_upper'>
+                <div class='card_back'>
                     <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
                 </div>
                 <div class='card_lower'>
-                    <div class='card_desc'>
-                        <p></p>
+                    <div class='card_name'>
+                        {$eventName}
                     </div>
                     <div class='card_date'>
                         <p></p>
