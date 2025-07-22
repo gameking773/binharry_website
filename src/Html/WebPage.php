@@ -164,6 +164,7 @@ class WebPage
                 <head>
                     <meta charset="UTF-8">
                     <title>$this->title</title>
+                    <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet'>
                     $this->head
                 </head>
                 <body>
