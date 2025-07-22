@@ -40,3 +40,7 @@ Pour pouvoir utiliser les requêtes SQL, sur **Windows**, téléchargez XAMPP : 
 Le rendu devrait être : `$cfg['Servers'][$i]['host'] = '127.0.0.1:3306';` à cette ligne.
 
 Importez la BDD en vous connectant à phpMyAdmin (bouton Admin du module MySQL, ou `http://localhost/phpmyadmin/`).
+
+## Informations annexes
+
+Les images sur les cartes dans la page events.php prennent pour résolution du 448x537
