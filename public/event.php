@@ -29,7 +29,7 @@ $idAffiche = $event -> getAfficheId();
 $webpage = new WebPage("Evènement - $eventName");
 
 $webpage->appendContent(<<<HTML
-    <h1>{$eventName} - </h1>
+    <h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
     <div class="content">
     <div class="affiche">
     HTML

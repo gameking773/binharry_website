@@ -46,6 +46,7 @@ foreach (EventCollection::findAll() as $event){
     $eventId = $event->getEventId();
     $idAffiche = $event -> getAfficheId();
     $eventName = $event -> getEventNom();
+    $eventDate = $event -> getEventDate();
 
     if ($idAffiche == NULL) {
         $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
@@ -63,10 +64,10 @@ foreach (EventCollection::findAll() as $event){
                 </div>
                 <div class='card_overlay'>
                     <div class='card_name'>
-                        <p>{$eventName}</p>
+                        <p>{$eventName} </p>
                     </div>
                     <div class='card_date'>
-                        <p>22/07/2025</p>
+                        <p>{$eventDate->format('d/m/Y')}</p>
                     </div>
                 </div>
             </div>
