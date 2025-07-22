@@ -61,12 +61,12 @@ foreach (EventCollection::findAll() as $event){
                 <div class='card_back'>
                     <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
                 </div>
-                <div class='card_lower'>
+                <div class='card_overlay'>
                     <div class='card_name'>
-                        {$eventName}
+                        <p>{$eventName}</p>
                     </div>
                     <div class='card_date'>
-                        <p></p>
+                        <p>22/07/2025</p>
                     </div>
                 </div>
             </div>
