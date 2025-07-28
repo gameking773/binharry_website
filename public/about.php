@@ -43,7 +43,8 @@ $WebPage -> appendContent("<div class='page_top'>
                         <div class = 'about_form_bottom'>
                             <label for='message'>Message:</label><br>   
                             <textarea id='message' name='message' rows='4' cols='50' required></textarea><br>
-                            <input type='checkbox' name='agreement' required>J'ai lu et j'accepte la politique de gestion des données<br>
+                            <input type='checkbox' name='agreement' required>
+                            <label for='agreement'>J'ai lu et j'accepte la politique de gestion des données</label><br>
                             <input type='submit' value='Envoyer' class='submit-button'>
                         </div>       
                     </form>
