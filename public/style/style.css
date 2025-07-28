@@ -107,7 +107,8 @@ header li{
 .input_header{
     display:flex;
     height:60px;
-    width:320px;
+    width:500px;
+    padding-left:3%;
     font-size:18px;
     margin:50px;
     border-radius:5px;
