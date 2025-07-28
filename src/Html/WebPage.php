@@ -172,7 +172,8 @@ class WebPage
                         <div class='wrapper'>
                             <div class='header__logo'>
                                 <a href='index.php'>
-                                    <img src='img/logo_binharry_rec.png' alt='Logo du BDE' class='logo'>
+                                    <img src='img/header_logo_box.png' alt='Logo du BDE' class='logo_box'>
+                                    <img src='img/header_logo_text.png' alt='Texte du BDE' class='logo_text'>
                                 </a>
                             </div>
                             <div class='header__bar'>
