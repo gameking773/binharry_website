@@ -42,6 +42,11 @@ a{
     color:#00BFF3;
 }
 
+.note, .about_form, .content-events, h2{
+    margin: 20px;
+    padding: 0;
+}
+
 /** Css relatif à la barre de menu **/
 header{
     width:100%;
@@ -95,13 +100,8 @@ header a{
     align-items: center;
 }
 
-li{
+header li{
     list-style: none;
-}
-
-.note, .about_form, .content-events, h2{
-    margin: 20px;
-    padding: 0;
 }
 
 .input_header{
