@@ -5,13 +5,13 @@ html, body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 body {
     display : flex;
     flex-direction: column;
-    font-size: medium
+    font-size: medium;
+    overflow-x: hidden;
 }
 
 .team-list{
@@ -36,14 +36,32 @@ body {
     padding-bottom: 60px;
 }
 
+a{
+    text-decoration: none;
+    font-weight:bold;
+    color:white;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#00BFF3;
+    transition:0.3s;
+}
+
 /** Css relatif à la barre de menu **/
 header{
     width:100%;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(44, 44, 44, 0.5);
     display: flex;
     flex-direction: row;
     align-items: center;
     height:150px;
+    position:fixed;
+    z-index:1;
+}
+
+header + *{
+    margin-top:150px;
 }
 
 .header__items ul, .wrapper{
@@ -52,15 +70,6 @@ header{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
-}
-
-.header__line{
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #00bff3;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 img{
@@ -77,12 +86,6 @@ img{
 
 li{
     list-style: none;
-}
-
-a{
-    text-decoration: none;
-    font-weight:bold;
-    color:#00BFF3;
 }
 
 .note, .about_form, .content-events, h2{
@@ -271,6 +274,7 @@ h2{
     display:flex;
     transition:0.3s;
 }
+
 .card_overlay:hover .card_name, .card_overlay:hover .card_date{
     opacity:100%;
     transition:0.3s;
