@@ -1,5 +1,7 @@
 <?php
-declare(strict_types=1); 
+declare(strict_types=1);
+
+use Html\WebPage;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupération et nettoyage des données du formulaire
@@ -25,4 +27,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Oopsie, le message ne s'est pas envoyé. Essaie encore.";
     }
+}
+else{
+    $search = htmlspecialchars($_GET["search"]);
+
+    if (empty($search)) {
+        header('Location: index.php');
+        exit();
+    }
+
+    $webpage = new WebPage("Résultat de la recherche : $search");
+
+    if ($search == "sandron") {
+        $webpage->appendContent(<<<HTML
+        <style>
+            img{
+            width : 100%;
+            height : 100%;
+            }
+        </style>
+        <a href="https://iut-info.univ-reims.fr/users/sandron/restricted/">
+            <img src='https://media.discordapp.net/attachments/1107765849235931207/1315988943942193202/f15872f7-7bca-4be2-8587-44c1cac738a9.gif?ex=6880b9b6&is=687f6836&hm=3ced9d24ef8d94f4d3f6870a3a421ded2e034413ac2b72dc50892a8c8095b55f&=&width=140&height=140'>
+        </a>
+        HTML);
+    }
+    else {
+        $webpage->appendContent("<p>Nothing to see here, try again</p>");
+    }
+
+    echo $webpage->toHtml();
 }

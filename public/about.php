@@ -30,13 +30,23 @@ $WebPage -> appendContent("<div class='page_top'>
                 </div>
                 <div class='about_form_box'>
                     <form action='action.php' method='post' class='about_form'>
-                        <label for='name'>Nom:</label>
-                        <input type='text' id='name' name='name' required><br>
-                        <label for='email'>Email:</label>           
-                        <input type='email' id='email' name='email' required><br>
-                        <label for='message'>Message:</label><br>   
-                        <textarea id='message' name='message' rows='4' cols='50' required></textarea><br>
-                        <input type='submit' value='Envoyer' class='submit-button'>       
+                        <div class = 'about_form_top'>
+                            <div class='about_form_name'>
+                                <label for='name'>Nom:</label>
+                                <input type='text' id='name' name='name' required><br>
+                            </div>
+                            <div class='about_form_mail'>
+                                <label for='email'>Email:</label>           
+                                <input type='email' id='email' name='email' required><br>
+                            </div>
+                        </div>
+                        <div class = 'about_form_bottom'>
+                            <label for='message'>Message:</label><br>   
+                            <textarea id='message' name='message' rows='4' cols='50' required></textarea><br>
+                            <input type='checkbox' name='agreement' required>
+                            <label for='agreement'>J'ai lu et j'accepte la politique de gestion des données</label><br>
+                            <input type='submit' value='Envoyer' class='submit-button'>
+                        </div>       
                     </form>
                     <p class='note'>Notez que ce formulaire ne sera très certainement ni lu, ni pris en compte.</p>
                 </div>
