@@ -5,13 +5,13 @@ html, body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 body {
     display : flex;
     flex-direction: column;
-    font-size: medium
+    font-size: medium;
+    overflow-x: hidden;
 }
 
 .team-list{
@@ -36,49 +36,6 @@ body {
     padding-bottom: 60px;
 }
 
-/** Css relatif à la barre de menu **/
-header{
-    width:100%;
-    background-color: rgba(255,255,255, 0.5);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height:150px;
-}
-
-.header__items ul, .wrapper{
-    font-size:50px;
-    flex:1;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-}
-
-.header__line{
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #00bff3;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-img{
-    height:120px;
-    width:auto;
-}
-
-.header__logo, .header__items{
-    display:flex;
-    flex:1;
-    justify-content: center;
-    align-items: center;
-}
-
-li{
-    list-style: none;
-}
-
 a{
     text-decoration: none;
     font-weight:bold;
@@ -90,10 +47,68 @@ a{
     padding: 0;
 }
 
+/** Css relatif à la barre de menu **/
+header{
+    width:100%;
+    background-color: rgba(44, 44, 44, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:150px;
+    position:fixed;
+    z-index:1;
+    box-shadow:0 3px 9px rgba(0,0,0,.32);
+}
+
+header + *{
+    margin-top:150px;
+    filter:none;
+}
+
+header a:hover{
+    color:white;
+    transition:0.3s;
+}
+
+header a{
+    transition:0.3s;
+}
+
+.header__items ul, .wrapper{
+    font-size:50px;
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.header__logo img{
+    height:120px;
+    width:auto;
+}
+
+.header__logo a img.logo_box:hover + img.logo_text,
+.header__logo a img.logo_text:hover {
+    transition:0.3s;
+    filter: grayscale(100%) brightness(200%);
+}
+
+.header__logo, .header__items{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+header li{
+    list-style: none;
+}
+
 .input_header{
     display:flex;
     height:60px;
-    width:320px;
+    width:500px;
+    padding-left:3%;
     font-size:18px;
     margin:50px;
     border-radius:5px;
@@ -193,37 +208,6 @@ h2{
 
 /** Partie du css relatif au système de cartes **/
 
-/** ancienne version
-.card {
-    position: relative;
-    color:white;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.card-title{
-    color: black;
-    line-height: 15px;
-    text-align: center;
-    opacity:0 ;
-}
-.card-description{
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity .5s;
-    text-align: center;
-    font-size: x-large;
-}
-.card:hover .card-description{
-    opacity: 1;
-    transition-delay: .25s;
-}
-.Readmore{
-    color:grey;
-}
-*/
-
 .card_list{
     display:flex;
     justify-content: space-evenly;
@@ -271,6 +255,7 @@ h2{
     display:flex;
     transition:0.3s;
 }
+
 .card_overlay:hover .card_name, .card_overlay:hover .card_date{
     opacity:100%;
     transition:0.3s;
