@@ -300,6 +300,26 @@ h2{
     padding-top:10px;
 }
 
+.about_form_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about_form_name, .about_form_mail{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.about_form_bottom{
+    padding-left: 2px;
+    padding-right: 2px;
+    flex:1;
+}
+
 textarea{
     resize: none;
 }
@@ -320,3 +340,4 @@ textarea{
     color: grey;
     margin-top: 10px;
 }
+
