@@ -88,6 +88,10 @@ header + *{
     filter: grayscale(100%) brightness(200%);
 }
 
+.logo_text{
+    transition:0.3s;
+}
+
 .header__logo, .header__items{
     display:flex;
     flex:1;
