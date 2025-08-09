@@ -42,6 +42,15 @@ a{
     color:#00BFF3;
 }
 
+a:hover{
+    color:white;
+    transition:0.3s;
+}
+
+a{
+    transition:0.3s;
+}
+
 .note, .about_form, .content-events, h2{
     margin: 20px;
     padding: 0;
@@ -52,39 +61,25 @@ header{
     width:100%;
     background-color: rgba(44, 44, 44, 0.5);
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    height:150px;
     position:fixed;
     z-index:1;
     box-shadow:0 3px 9px rgba(0,0,0,.32);
 }
 
 header + *{
-    margin-top:150px;
+    margin-top:170px;
     filter:none;
-}
-
-header a:hover{
-    color:white;
-    transition:0.3s;
-}
-
-header a{
-    transition:0.3s;
 }
 
 .header__items ul, .wrapper{
     font-size:50px;
     flex:1;
     display:flex;
-    flex-direction:row;
     justify-content: space-evenly;
 }
 
 .header__logo img{
     height:120px;
-    width:auto;
 }
 
 .header__logo a img.logo_box:hover + img.logo_text,
