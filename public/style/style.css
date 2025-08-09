@@ -56,13 +56,28 @@ a{
     padding: 0;
 }
 
+.easter_egg{
+    transition:0.3s;
+}
+
+.easter_egg:hover{
+    filter:invert();
+    transition: 0.3s;
+}
+
+.easter_egg img{
+    width:25px;
+}
+
 /** Css relatif à la barre de menu **/
+
 header{
     width:100%;
     background-color: rgba(44, 44, 44, 0.5);
     position:fixed;
     z-index:1;
     box-shadow:0 3px 9px rgba(0,0,0,.32);
+    font-family: "Bebas Neue", sans-serif;
 }
 
 header + *{
@@ -71,10 +86,10 @@ header + *{
 }
 
 .header__items ul, .wrapper{
-    font-size:50px;
+    font-size:80px;
+    line-height: 0;
     flex:1;
     display:flex;
-    justify-content: space-evenly;
 }
 
 .header__logo img{
@@ -94,8 +109,21 @@ header + *{
 .header__logo, .header__items{
     display:flex;
     flex:1;
-    justify-content: center;
     align-items: center;
+}
+
+.header__logo{
+    padding-left:2%;
+}
+
+.header__items ul{
+    display:flex;
+    flex:1;
+    justify-content: flex-end;
+}
+
+.header__items li{
+    padding-right:5%;
 }
 
 header li{
