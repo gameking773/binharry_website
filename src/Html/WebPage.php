@@ -193,9 +193,24 @@ class WebPage
                         $this->body
                     </div>
                     <footer>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed non dignissimos quibusdam, ratione id quo voluptas molestiae esse. Voluptates, fuga. Explicabo asperiores quaerat soluta autem molestias porro unde consequatur consequuntur?
-                        </p>
+                        <div class='footer_top'>
+                            <h2>BIN'HARRY</h2>
+                            <hr class='footer_line'>
+                            <div class='footer_socials'>
+                                <a class='logo_box' href='http://www.discord.com/invite/wXpRMds6BC'>
+                                    <img src='img/icon-discord.png' alt='Lien Discord'>
+                                </a>
+                                <a class='logo_box' href='https://www.instagram.com/bdebinharry/'>
+                                    <img src='img/icon-instagram.png' alt='Lien Instagram'>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='footer_bottom'>
+                            <p>
+                                @2025 Bin'Harry |
+                                <a href='about.php'>Mentions Légales</a>
+                            </p>
+                        </div>
                     </footer>
                 </body>
             </html>
