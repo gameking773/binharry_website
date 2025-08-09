@@ -115,6 +115,9 @@ header li{
     border-color:#00BFF3;
 }
 
+@media screen and (max-width: 1700px) {
+}
+
 /** Footer **/
 footer{
     background: conic-gradient(
