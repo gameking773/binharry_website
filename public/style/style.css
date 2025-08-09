@@ -161,7 +161,7 @@ footer{
     padding-bottom:1%;
 }
 
-.footer_socials img{
+.footer_socials a, .footer_socials img{
     display:flex;
     flex:1;
     width:50%;
@@ -170,6 +170,7 @@ footer{
 
 .footer_bottom{
     background-color:#212121;
+    color:#636363;
 }
 
 /** Partie design de fond */
