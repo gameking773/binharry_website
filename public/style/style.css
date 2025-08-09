@@ -130,17 +130,6 @@ header li{
     list-style: none;
 }
 
-.input_header{
-    display:flex;
-    height:60px;
-    width:500px;
-    padding-left:3%;
-    font-size:18px;
-    margin:50px;
-    border-radius:5px;
-    border-color:#00BFF3;
-}
-
 @media screen and (max-width: 1700px) {
 }
 
@@ -407,3 +396,20 @@ textarea{
     margin-top: 10px;
 }
 
+/** Barre d'easter egg */
+
+.easter_box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.easter_bar{
+    height:60px;
+    width:500px;
+    padding-left:1%;
+    font-size:18px;
+    border-radius:5px;
+    border-color:#00BFF3;
+    font-size:larger;
+}
