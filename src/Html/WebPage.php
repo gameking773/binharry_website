@@ -176,15 +176,10 @@ class WebPage
                                     <img src='img/header_logo_text.png' alt='Texte du BDE' class='logo_text'>
                                 </a>
                             </div>
-                            <div class='header__bar'>
-                                <form action="action.php" method="get">
-                                    <input type="text" id="search" name="search" placeholder="" class='input_header'>
-                                </form>
-                            </div>
                             <div class='header__items'>
                                 <ul>
-                                    <li><a href='events.php'>Events</a></li>
-                                    <li><a href='about.php'>Contact</a></li>
+                                    <li><a href='events.php'>ÉVÉNEMENTS</a></li>
+                                    <li><a href='about.php'>CONTACT</a></li>
                                 </ul>
                             </div>
                         </div>
