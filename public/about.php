@@ -30,25 +30,34 @@ $WebPage -> appendContent("<div class='page_top'>
                 <div class='about_form_gradiant'>
                     <h2>NOUS CONTACTER</h2>
                 </div>
+
                 <div class='about_form_box'>
                     <form action='action.php' method='post' class='about_form'>
-                        <div class = 'about_form_top'>
+                        <div class='about_form_top'>
+
                             <div class='about_form_name'>
-                                <label for='name'>Nom:</label>
-                                <input type='text' id='name' name='name' required><br>
+                                <label for='name'>NOM PRÉNOM</label>
+                                <input type='text' id='name' name='name' required>
                             </div>
+
                             <div class='about_form_mail'>
-                                <label for='email'>Email:</label>           
-                                <input type='email' id='email' name='email' required><br>
+                                <label for='email'>ADRESSE MAIL</label>           
+                                <input type='email' id='email' name='email' required>
                             </div>
+
                         </div>
-                        <div class = 'about_form_bottom'>
-                            <label for='message'>Message:</label><br>   
-                            <textarea id='message' name='message' rows='4' cols='50' required></textarea><br>
+
+                        <div class='about_form_bottom'>
+                            <label for='message'>MESSAGE</label>
+                            <textarea id='message' name='message' rows='4' cols='50' required></textarea>
+                        </div>
+
+                        <div class='about_form_data_info'>
                             <input type='checkbox' name='agreement' required>
-                            <label for='agreement'>J'ai lu et j'accepte la politique de gestion des données</label><br>
-                            <input type='submit' value='Envoyer' class='submit-button'>
-                        </div>       
+                            <label for='agreement' id='data-info'>J'ai lu et j'accepte la politique de gestion des données</label>
+                        </div>
+                        
+                        <input type='submit' value='Envoyer' class='submit-button'>
                     </form>
                 </div>
                 <div class='about_form_gradiant_end'></div>");
