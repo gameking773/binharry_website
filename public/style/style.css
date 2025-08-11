@@ -13,25 +13,6 @@ html, body, input, textarea{
 body {
     display : flex;
     flex-direction: column;
-    font-size: medium;
-    overflow-x: hidden;
-}
-
-.team-list{
-    display: flex;
-    flex-direction: column;
-    color : black;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:10px;
-}
-
-.page_info{
-    color:white;
-    background-color: #024EAE;
-    font-size:60px;
-    text-align:center;
-    padding:2%;
 }
 
 .content{
@@ -51,22 +32,21 @@ a:hover{
     transition:0.3s;
 }
 
-.note, .about_form, .content-events, h2{
+h2{
     margin: 20px;
     padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:200;
+    font-size:124px;
 }
 
-.easter_egg{
-    transition:0.3s;
-}
-
-.easter_egg:hover{
-    filter:invert();
-    transition: 0.3s;
-}
-
-.easter_egg img{
-    width:25px;
+/** à remplacer par le même visuel que la page contact*/
+.page_info{
+    color:white;
+    background-color: #024EAE;
+    font-size:60px;
+    text-align:center;
+    padding:2%;
 }
 
 /** Partie design de fond */
@@ -98,12 +78,6 @@ a:hover{
 
 .about_info h2, .about_form_gradiant h2{
     color:white;
-}
-
-h2{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight:200;
-    font-size:124px;
 }
 
 .about_info li{
@@ -139,30 +113,6 @@ h2{
     background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(2, 78, 174, 1) 61.5%);
 }
 
-/** Evènements **/
-#Event1 {
-    background-size: cover;
-    background-color: blue;
-}
-#Event2 {
-    background-size: cover;
-    background-color: red;
-}
-#Event3 {
-    background-size: cover;
-    background-color: green;
-}
-#Event4 {
-    background-size: cover;
-    background-color: yellow;
-}
-
-.content-events{
-    display: grid ;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-
 /** Barre d'easter egg */
 
 .easter_box{
@@ -175,8 +125,20 @@ h2{
     height:60px;
     width:500px;
     padding-left:1%;
-    font-size:18px;
     border-radius:5px;
     border-color:#00BFF3;
     font-size:larger;
+}
+
+.easter_egg{
+    transition:0.3s;
+}
+
+.easter_egg:hover{
+    filter:invert();
+    transition: 0.3s;
+}
+
+.easter_egg img{
+    width:25px;
 }
