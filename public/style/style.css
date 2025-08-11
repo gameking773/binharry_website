@@ -218,62 +218,6 @@ h2{
     gap: 20px;
 }
 
-/** Formulaire de contact **/
-
-.about_form{
-    display: flex;
-    flex-direction: column;
-    border-color:#00bff3;
-    border-style: solid;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.about_form label{
-    padding-top:10px;
-}
-
-.about_form_top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about_form_name, .about_form_mail{
-    display:flex;
-    flex-direction: column;
-    flex:1;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-.about_form_bottom{
-    padding-left: 2px;
-    padding-right: 2px;
-    flex:1;
-}
-
-textarea{
-    resize: none;
-}
-
-.submit-button{
-    width: 100px;
-    height: 30px;
-    background-color: #0087ac;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.note{
-    font-size: xx-small;
-    color: grey;
-    margin-top: 10px;
-}
-
 /** Barre d'easter egg */
 
 .easter_box{

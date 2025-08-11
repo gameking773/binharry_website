@@ -105,7 +105,6 @@ class WebPage
         $this->head .= <<<HTML
         <link href="$url" rel="stylesheet" type="text/css">
         HTML;
-        $this->head .= "\n\t\t\t";
     }
 
     /**
@@ -167,6 +166,7 @@ class WebPage
                     <link href="style/style.css" rel="stylesheet" type="text/css">
                     <link href="style/header.css" rel="stylesheet" type="text/css">
                     <link href="style/footer.css" rel="stylesheet" type="text/css">
+                    $this->head
                 </head>
                 <body>
                     <header>

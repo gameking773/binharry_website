@@ -4,6 +4,8 @@ use Html\WebPage as WebPage;
 
 $WebPage = new WebPage("À propos");
 
+$WebPage -> appendCssUrl("style/contact-form.css");
+
 $WebPage -> appendContent("<div class='page_top'>               
                     <h1>CONTACT</h1>
                     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
