@@ -50,7 +50,6 @@ $WebPage -> appendContent("<div class='page_top'>
                             <input type='submit' value='Envoyer' class='submit-button'>
                         </div>       
                     </form>
-                    <p class='note'>Notez que ce formulaire ne sera très certainement ni lu, ni pris en compte.</p>
                 </div>
                 <div class='about_form_gradiant_end'></div>");
 
