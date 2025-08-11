@@ -6,6 +6,8 @@ use Entity\Collection\EventCollection as EventCollection;
 
 $WebPage = new WebPage("Événements");
 
+$WebPage -> appendCssUrl("style/event-card.css");
+
 $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
                 <div class='card_list'>");
 
