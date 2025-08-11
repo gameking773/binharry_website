@@ -43,14 +43,11 @@ a{
     text-decoration: none;
     font-weight:bold;
     color:#00BFF3;
+    transition:0.3s;
 }
 
 a:hover{
     color:white;
-    transition:0.3s;
-}
-
-a{
     transition:0.3s;
 }
 

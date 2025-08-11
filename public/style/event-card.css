@@ -51,3 +51,7 @@
     opacity:100%;
     transition:0.3s;
 }
+
+.card_list > a{
+    color:#00bff3;
+}
