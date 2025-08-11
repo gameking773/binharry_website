@@ -7,7 +7,7 @@ use Entity\Collection\EventCollection as EventCollection;
 $WebPage = new WebPage("Événements");
 
 $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
-    <div class='card_list'>");
+                <div class='card_list'>");
 
 foreach (EventCollection::findAll() as $event){
     $eventId = $event->getEventId();
@@ -24,23 +24,23 @@ foreach (EventCollection::findAll() as $event){
     }
 
     $WebPage -> appendContent("
-        <a href='event.php?eventId={$eventId}'>
-            <div class='card'>
-                <div class='card_back'>
-                    <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
-                </div>
-                <div class='card_overlay'>
-                    <div class='card_name'>
-                        <p>{$eventName} </p>
-                    </div>
-                    <div class='card_date'>
-                        <p>{$eventDate->format('d/m/Y')}</p>
-                    </div>
-                </div>
-            </div>
-        </a>");
+                    <a href='event.php?eventId={$eventId}'>
+                        <div class='card'>
+                            <div class='card_back'>
+                                <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
+                            </div>
+                            <div class='card_overlay'>
+                                <div class='card_name'>
+                                    <p>{$eventName} </p>
+                                </div>
+                                <div class='card_date'>
+                                    <p>{$eventDate->format('d/m/Y')}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>");
 }
 
-$WebPage -> appendContent("</div>");
+$WebPage -> appendContent("\n\t\t\t\t</div>");
 
 echo $WebPage -> toHTML();
