@@ -6,38 +6,6 @@ use Entity\Collection\EventCollection as EventCollection;
 
 $WebPage = new WebPage("Événements");
 
-/** ancienne version
-$WebPage -> appendContent("<div class='content-events'>
-                    <div class='card-container'>
-                        <article class='card' id='Event1'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>
-                    <div class='card-container'>
-                        <article class='card' id='Event2'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>
-                    <div class='card-container'>
-                        <article class='card' id='Event3'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>
-                    <div class='card-container'>
-                        <article class='card' id='Event4'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>");
-*/
-
 $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
     <div class='card_list'>");
 
