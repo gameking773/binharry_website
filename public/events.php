@@ -7,8 +7,7 @@ use Entity\Collection\EventCollection as EventCollection;
 $WebPage = new WebPage("Événements");
 
 /** ancienne version
-$WebPage -> appendContent("
-                <div class='content-events'>
+$WebPage -> appendContent("<div class='content-events'>
                     <div class='card-container'>
                         <article class='card' id='Event1'>
                             <div class='card-content'>

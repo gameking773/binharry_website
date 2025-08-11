@@ -20,9 +20,6 @@ class WebPage
         $this->title = $title;
         $this->head = "";
         $this->body = "";
-        $this->appendCssUrl("style/style.css");
-        $this->appendCssUrl("style/header.css");
-        $this->appendCssUrl("style/footer.css");
     }
 
     /**
@@ -106,9 +103,9 @@ class WebPage
     public function appendCssUrl(string $url): void
     {
         $this->head .= <<<HTML
-            <link href="$url" rel="stylesheet" type="text/css">
+        <link href="$url" rel="stylesheet" type="text/css">
         HTML;
-        $this->head .= "\n";
+        $this->head .= "\n\t\t\t";
     }
 
     /**
@@ -167,7 +164,9 @@ class WebPage
                     <meta charset="UTF-8">
                     <title>$this->title</title>
                     <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet'>
-                    $this->head
+                    <link href="style/style.css" rel="stylesheet" type="text/css">
+                    <link href="style/header.css" rel="stylesheet" type="text/css">
+                    <link href="style/footer.css" rel="stylesheet" type="text/css">
                 </head>
                 <body>
                     <header>
@@ -186,9 +185,11 @@ class WebPage
                             </div>
                         </div>
                     </header>
+
                     <div class='content'>
                         $this->body
                     </div>
+
                     <footer>
                         <div class='footer_top'>
                             <h2>BIN'HARRY</h2>
@@ -212,7 +213,6 @@ class WebPage
                 </body>
             </html>
         HTML;
-
         return $page;
     }
 
@@ -227,6 +227,4 @@ class WebPage
         $date = date("j/n/o - G:i", getlastmod());
         return $date;
     }
-
-
 }
