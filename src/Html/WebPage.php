@@ -21,6 +21,8 @@ class WebPage
         $this->head = "";
         $this->body = "";
         $this->appendCssUrl("style/style.css");
+        $this->appendCssUrl("style/header.css");
+        $this->appendCssUrl("style/footer.css");
     }
 
     /**
