@@ -12,13 +12,14 @@
     height:640px;
     flex-direction:column;
     border-radius: 5px;
+    border-width: 5px;
     border-style:solid;
     border-color:#5de0e6;
     position:relative;
     margin:8px;
 }
 
-.card:hover{
+.card_link:hover{
     border-color:#0087ac;
 }
 
