@@ -113,6 +113,14 @@ h2{
     background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(2, 78, 174, 1) 61.5%);
 }
 
+.gradiant_end_blue{
+    padding-top:25%;
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(0, 191, 243, 1) 61.5%);
+}
+
 /** Barre d'easter egg */
 
 .easter_box{

@@ -16,38 +16,18 @@ $WebPage -> appendContent("<div class='page_top'>
                 </div>
                 <div class='card_list'>");
 
-for ($i = 0; $i < 2; $i++){
-    foreach (EventCollection::findAll() as $event){
-    $eventId = $event->getEventId();
-    $idAffiche = $event -> getAfficheId();
-    $eventName = $event -> getEventNom();
-    $eventDate = $event -> getEventDate();
+foreach (EventCollection::findAll() as $event){
+$eventId = $event->getEventId();
+$idAffiche = $event -> getAfficheId();
+$eventName = $event -> getEventNom();
+$eventDate = $event -> getEventDate();
 
-    if ($idAffiche == NULL) {
-        $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
-    }
-    else {
-        $affiche = new \Entity\Affiche()->findById($idAffiche);
-        $afficheJpeg = $affiche->getJpeg();
-    }
-
-    $WebPage -> appendContent("
-                    <div class='card'>
-                        <a href='event.php?eventId={$eventId}' class='card_link'>
-                            <div class='card_back'>
-                                <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
-                            </div>
-                            <div class='card_overlay'>
-                                <div class='card_name'>
-                                    <p>{$eventName} </p>
-                                </div>
-                                <div class='card_date'>
-                                    <p>{$eventDate->format('d/m/Y')}</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>");
-    }
+if ($idAffiche == NULL) {
+    $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
+}
+else {
+    $affiche = new \Entity\Affiche()->findById($idAffiche);
+    $afficheJpeg = $affiche->getJpeg();
 }
 
 $WebPage -> appendContent("
@@ -66,7 +46,9 @@ $WebPage -> appendContent("
                         </div>
                     </a>
                 </div>");
+}
 
-$WebPage -> appendContent("\n\t\t\t\t</div>");
+$WebPage -> appendContent("\n\t\t\t\t</div>
+                <div class='gradiant_end_blue'></div>");
 
 echo $WebPage -> toHTML();
