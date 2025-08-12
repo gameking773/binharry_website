@@ -43,4 +43,4 @@ Importez la BDD en vous connectant à phpMyAdmin (bouton Admin du module MySQL, 
 
 ## Informations annexes
 
-Les images sur les cartes dans la page events.php prennent pour résolution du 448x537
+Les images sur les cartes dans la page events.php ont pour résolution 501x573
