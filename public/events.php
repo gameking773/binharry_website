@@ -32,8 +32,8 @@ for ($i = 0; $i < 4; $i++){
     }
 
     $WebPage -> appendContent("
-                    <a href='event.php?eventId={$eventId}'>
-                        <div class='card'>
+                    <div class='card'>
+                        <a href='event.php?eventId={$eventId}' class='card_link'>
                             <div class='card_back'>
                                 <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
                             </div>
@@ -45,8 +45,8 @@ for ($i = 0; $i < 4; $i++){
                                     <p>{$eventDate->format('d/m/Y')}</p>
                                 </div>
                             </div>
-                        </div>
-                    </a>");
+                        </a>
+                    </div>");
     }
 }
 

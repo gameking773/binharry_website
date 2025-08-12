@@ -3,9 +3,10 @@
     justify-content: space-evenly;
     flex-wrap:wrap;
     background-color: #00bff3;
+    margin-top:-1%;
 }
 
-.card{
+.card_link{
     display:flex;
     width:560px;
     height:640px;
@@ -22,8 +23,8 @@
 }
 
 .card_back, .card_back img{
-    width:100%;
-    height:100%;
+    display:flex;
+    flex:1;
     border-radius: 5px;
 }
 
@@ -33,8 +34,8 @@
     width:100%;
     height:100%;
     align-items: flex-end;
-    margin-left:5%;
     transition:0.3s;
+    color:#00bff3;
 }
 
 .card_name, .card_date{
@@ -49,9 +50,6 @@
 }
 
 .card_name{
+    margin-left:5%;
     margin-right:5%;
-}
-
-.card_list > a{
-    color:#00bff3;
 }
