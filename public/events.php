@@ -16,7 +16,7 @@ $WebPage -> appendContent("<div class='page_top'>
                 </div>
                 <div class='card_list'>");
 
-for ($i = 0; $i < 4; $i++){
+for ($i = 0; $i < 2; $i++){
     foreach (EventCollection::findAll() as $event){
     $eventId = $event->getEventId();
     $idAffiche = $event -> getAfficheId();
@@ -50,6 +50,22 @@ for ($i = 0; $i < 4; $i++){
     }
 }
 
+$WebPage -> appendContent("
+                <div class='card'>
+                    <a href='event.php?eventId={$eventId}' class='card_link'>
+                        <div class='card_back'>
+                            <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
+                        </div>
+                        <div class='card_overlay'>
+                            <div class='card_name'>
+                                <p>{$eventName} </p>
+                            </div>
+                            <div class='card_date'>
+                                <p>{$eventDate->format('d/m/Y')}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>");
 
 $WebPage -> appendContent("\n\t\t\t\t</div>");
 
