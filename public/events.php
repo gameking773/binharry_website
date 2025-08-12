@@ -11,7 +11,8 @@ $WebPage -> appendCssUrl("style/event-card.css");
 $WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
                 <div class='card_list'>");
 
-foreach (EventCollection::findAll() as $event){
+for ($i = 0; $i < 4; $i++){
+    foreach (EventCollection::findAll() as $event){
     $eventId = $event->getEventId();
     $idAffiche = $event -> getAfficheId();
     $eventName = $event -> getEventNom();
@@ -41,7 +42,9 @@ foreach (EventCollection::findAll() as $event){
                             </div>
                         </div>
                     </a>");
+    }
 }
+
 
 $WebPage -> appendContent("\n\t\t\t\t</div>");
 
