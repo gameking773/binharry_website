@@ -7,24 +7,11 @@ header{
     font-family: "Bebas Neue", sans-serif;
 }
 
-header + *{
-    margin-top:170px;
-    filter:none;
-}
-
-.header__right ul, .wrapper{
+header{
     font-size:80px;
-    line-height: 0;
     flex:1;
     display:flex;
-}
-
-.header__logo img{
-    height:120px;
-}
-
-.logo_text{
-    transition:0.3s;
+    height:140px;
 }
 
 .header__left, .header__right{
@@ -33,32 +20,21 @@ header + *{
     align-items: center;
 }
 
-.header__left{
-    padding-left:2%;
-}
-
-.header__right ul{
-    display:flex;
-    flex:1;
-    justify-content: flex-end;
-}
-
-.header__right li{
-    padding-right:5%;
-}
-
-header li{
-    list-style: none;
+/* Partie gauche */
+.header__logo img{
+    height:120px;
 }
 
 .header__logo{
     display:flex;
     align-items: center;
+    padding-left:4%;
 }
 
 .logo_text{
     padding-left:5%;
     font-size:100px;
+    transition:0.3s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -66,11 +42,25 @@ header li{
         display:none;
     }
 
-    .header__right ul{
-        font-size:60px;
+    .logo_text{
+        font-size:80px;
     }
+}
 
-    .header__logo img{
-        height:80px;
-    }
+/* Partie droite */
+.header__sections{
+    display:flex;
+    flex:1;
+    justify-content: flex-end;
+}
+
+li{
+    list-style:none;
+    padding-right:5%;
+}
+
+/* Espace supplémentaire pour le header */
+header + * {
+    margin-top:140px;
+    filter:none;
 }

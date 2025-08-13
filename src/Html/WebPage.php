@@ -170,20 +170,18 @@ class WebPage
                 </head>
                 <body>
                     <header>
-                        <div class='wrapper'>
-                            <div class='header__left'>
-                                <a class='header__logo' href='index.php'>
-                                    <img src='img/header_logo_box.png' alt='Logo du BDE' class='logo_box'>
-                                    <div class='logo_text'>BIN'HARRY</div>
-                                </a>
-                            </div>
-                            <div class='header__right'>
-                                <ul>
-                                    <li><a href='events.php'>ÉVÉNEMENTS</a></li>
-                                    <li><a href='about.php'>CONTACT</a></li>
-                                </ul>
-                            </div>
+                        <div class='header__left'>
+                            <a class='header__logo' href='index.php'>
+                                <img src='img/header_logo_box.png' alt='Logo du BDE' class='logo_box'>
+                                <div class='logo_text'>BIN'HARRY</div>
+                            </a>
                         </div>
+                        <nav class='header__right'>
+                            <ol class='header__sections'>
+                                <li><a href='events.php'>ÉVÉNEMENTS</a></li>
+                                <li><a href='about.php'>CONTACT</a></li>
+                            </ol>
+                        </nav>
                     </header>
 
                     <div class='content'>
