@@ -57,5 +57,16 @@ header li{
     list-style: none;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1200px) {
+    .logo_box{
+        display:none;
+    }
+
+    .header__items ul{
+        font-size:60px;
+    }
+
+    .header__logo img{
+        height:80px;
+    }
 }
