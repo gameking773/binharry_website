@@ -171,13 +171,13 @@ class WebPage
                 <body>
                     <header>
                         <div class='wrapper'>
-                            <div class='header__logo'>
-                                <a href='index.php'>
+                            <div class='header__left'>
+                                <a class='header__logo' href='index.php'>
                                     <img src='img/header_logo_box.png' alt='Logo du BDE' class='logo_box'>
-                                    <img src='img/header_logo_text.png' alt='Texte du BDE' class='logo_text'>
+                                    <div class='logo_text'>BIN'HARRY</div>
                                 </a>
                             </div>
-                            <div class='header__items'>
+                            <div class='header__right'>
                                 <ul>
                                     <li><a href='events.php'>ÉVÉNEMENTS</a></li>
                                     <li><a href='about.php'>CONTACT</a></li>
