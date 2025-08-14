@@ -189,6 +189,7 @@ class WebPage
                     </div>
 
                     <footer>
+                        <div class='footer_transition'></div>
                         <div class='footer_top'>
                             <h2>BIN'HARRY</h2>
                             <hr class='footer_line'>
