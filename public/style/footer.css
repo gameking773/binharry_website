@@ -6,17 +6,13 @@ footer{
     flex-direction:column;
 }
 
+footer img{
+    background-color: white;
+}
+
 .footer_transition{
-    background: conic-gradient(
-    from 0 at 50% 25%,
-    #ffffff 85deg,
-    #3578be 30deg 95deg,
-    #065abc 30deg 265deg,
-    #3578be 240deg 275deg,
-    #ffffff 240deg
-    );
     display:flex;
-    padding-top:18%;
+    flex:1;
 }
 
 .footer_top{
