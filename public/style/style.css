@@ -140,6 +140,7 @@ h2{
 
 .easter_egg{
     transition:0.3s;
+    user-select: none;
 }
 
 .easter_egg:hover{
