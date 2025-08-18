@@ -1,0 +1,66 @@
+header{
+    width:100%;
+    background-color: rgba(44, 44, 44, 0.5);
+    position:fixed;
+    z-index:1;
+    box-shadow:0 3px 9px rgba(0,0,0,.32);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header{
+    font-size:80px;
+    flex:1;
+    display:flex;
+    height:140px;
+}
+
+.header__left, .header__right{
+    display:flex;
+    flex:1;
+    align-items: center;
+}
+
+/* Partie gauche */
+.header__logo img{
+    height:120px;
+}
+
+.header__logo{
+    display:flex;
+    align-items: center;
+    padding-left:4%;
+}
+
+.logo_text{
+    padding-left:5%;
+    font-size:100px;
+    transition:0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo_box{
+        display:none;
+    }
+
+    .logo_text{
+        font-size:80px;
+    }
+}
+
+/* Partie droite */
+.header__sections{
+    display:flex;
+    flex:1;
+    justify-content: flex-end;
+}
+
+li{
+    list-style:none;
+    padding-right:5%;
+}
+
+/* Espace supplémentaire pour le header */
+header + * {
+    margin-top:140px;
+    filter:none;
+}

@@ -6,74 +6,49 @@ use Entity\Collection\EventCollection as EventCollection;
 
 $WebPage = new WebPage("Événements");
 
-/** ancienne version
-$WebPage -> appendContent("
-                <div class='content-events'>
-                    <div class='card-container'>
-                        <article class='card' id='Event1'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>
-                    <div class='card-container'>
-                        <article class='card' id='Event2'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>
-                    <div class='card-container'>
-                        <article class='card' id='Event3'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>
-                    <div class='card-container'>
-                        <article class='card' id='Event4'>
-                            <div class='card-content'>
-                                <p class='card-description'>  <br><a href='' class='Readmore'>Read More</a></p>
-                            </div>
-                        </article> 
-                    </div>");
-*/
+$WebPage -> appendCssUrl("style/event-card.css");
 
-$WebPage -> appendContent("<h1 class='page_info'>LES ÉVÈNEMENTS</h1>
-    <div class='card_list'>");
+$WebPage -> appendContent("<div class='page_top'>               
+                    <h1>ÉVÈNEMENTS</h1>
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+                        <path fill='#00bff3' fill-opacity='1' d='M0,64L60,69.3C120,75,240,85,360,101.3C480,117,600,139,720,128C840,117,960,75,1080,48C1200,21,1320,11,1380,5.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'></path>
+                    </svg>
+                </div>
+                <div class='card_list'>");
 
 foreach (EventCollection::findAll() as $event){
-    $eventId = $event->getEventId();
-    $idAffiche = $event -> getAfficheId();
-    $eventName = $event -> getEventNom();
-    $eventDate = $event -> getEventDate();
+$eventId = $event->getEventId();
+$idAffiche = $event -> getAfficheId();
+$eventName = $event -> getEventNom();
+$eventDate = $event -> getEventDate();
 
-    if ($idAffiche == NULL) {
-        $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
-    }
-    else {
-        $affiche = new \Entity\Affiche()->findById($idAffiche);
-        $afficheJpeg = $affiche->getJpeg();
-    }
-
-    $WebPage -> appendContent("
-        <a href='event.php?eventId={$eventId}'>
-            <div class='card'>
-                <div class='card_back'>
-                    <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
-                </div>
-                <div class='card_overlay'>
-                    <div class='card_name'>
-                        <p>{$eventName} </p>
-                    </div>
-                    <div class='card_date'>
-                        <p>{$eventDate->format('d/m/Y')}</p>
-                    </div>
-                </div>
-            </div>
-        </a>");
+if ($idAffiche == NULL) {
+    $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
+}
+else {
+    $affiche = new \Entity\Affiche()->findById($idAffiche);
+    $afficheJpeg = $affiche->getJpeg();
 }
 
-$WebPage -> appendContent("</div>");
+$WebPage -> appendContent("
+                <div class='card'>
+                    <a href='event.php?eventId={$eventId}' class='card_link'>
+                        <div class='card_back'>
+                            <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
+                        </div>
+                        <div class='card_overlay'>
+                            <div class='card_name'>
+                                <p>{$eventName} </p>
+                            </div>
+                            <div class='card_date'>
+                                <p>{$eventDate->format('d/m/Y')}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>");
+}
+
+$WebPage -> appendContent("\n\t\t\t\t</div>
+                <div class='gradiant_end_blue'></div>");
 
 echo $WebPage -> toHTML();

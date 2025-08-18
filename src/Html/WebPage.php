@@ -20,7 +20,6 @@ class WebPage
         $this->title = $title;
         $this->head = "";
         $this->body = "";
-        $this->appendCssUrl("style/style.css");
     }
 
     /**
@@ -104,9 +103,8 @@ class WebPage
     public function appendCssUrl(string $url): void
     {
         $this->head .= <<<HTML
-            <link href="$url" rel="stylesheet" type="text/css">
+        <link href="$url" rel="stylesheet" type="text/css">
         HTML;
-        $this->head .= "\n";
     }
 
     /**
@@ -165,29 +163,33 @@ class WebPage
                     <meta charset="UTF-8">
                     <title>$this->title</title>
                     <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet'>
+                    <link href="style/style.css" rel="stylesheet" type="text/css">
+                    <link href="style/header.css" rel="stylesheet" type="text/css">
+                    <link href="style/footer.css" rel="stylesheet" type="text/css">
                     $this->head
                 </head>
                 <body>
                     <header>
-                        <div class='wrapper'>
-                            <div class='header__logo'>
-                                <a href='index.php'>
-                                    <img src='img/header_logo_box.png' alt='Logo du BDE' class='logo_box'>
-                                    <img src='img/header_logo_text.png' alt='Texte du BDE' class='logo_text'>
-                                </a>
-                            </div>
-                            <div class='header__items'>
-                                <ul>
-                                    <li><a href='events.php'>ÉVÉNEMENTS</a></li>
-                                    <li><a href='about.php'>CONTACT</a></li>
-                                </ul>
-                            </div>
+                        <div class='header__left'>
+                            <a class='header__logo' href='index.php'>
+                                <img src='img/header_logo_box.png' alt='Logo du BDE' class='logo_box'>
+                                <div class='logo_text'>BIN'HARRY</div>
+                            </a>
                         </div>
+                        <nav class='header__right'>
+                            <ol class='header__sections'>
+                                <li><a href='events.php'>ÉVÉNEMENTS</a></li>
+                                <li><a href='about.php'>CONTACT</a></li>
+                            </ol>
+                        </nav>
                     </header>
+
                     <div class='content'>
                         $this->body
                     </div>
+
                     <footer>
+                        <img src="img/footer_transition.svg" class='footer_transition'>
                         <div class='footer_top'>
                             <h2>BIN'HARRY</h2>
                             <hr class='footer_line'>
@@ -210,7 +212,6 @@ class WebPage
                 </body>
             </html>
         HTML;
-
         return $page;
     }
 
@@ -225,6 +226,4 @@ class WebPage
         $date = date("j/n/o - G:i", getlastmod());
         return $date;
     }
-
-
 }

@@ -2,33 +2,17 @@
 
 html, body {
     height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+html, body, input, textarea{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     display : flex;
     flex-direction: column;
-    font-size: medium;
-    overflow-x: hidden;
-}
-
-.team-list{
-    display: flex;
-    flex-direction: column;
-    color : black;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:10px;
-}
-
-.page_info{
-    color:white;
-    background-color: #024EAE;
-    font-size:60px;
-    text-align:center;
-    padding:2%;
 }
 
 .content{
@@ -40,6 +24,7 @@ a{
     text-decoration: none;
     font-weight:bold;
     color:#00BFF3;
+    transition:0.3s;
 }
 
 a:hover{
@@ -47,148 +32,21 @@ a:hover{
     transition:0.3s;
 }
 
-a{
-    transition:0.3s;
-}
-
-.note, .about_form, .content-events, h2{
+h2{
     margin: 20px;
     padding: 0;
-}
-
-.easter_egg{
-    transition:0.3s;
-}
-
-.easter_egg:hover{
-    filter:invert();
-    transition: 0.3s;
-}
-
-.easter_egg img{
-    width:25px;
-}
-
-/** Css relatif à la barre de menu **/
-
-header{
-    width:100%;
-    background-color: rgba(44, 44, 44, 0.5);
-    position:fixed;
-    z-index:1;
-    box-shadow:0 3px 9px rgba(0,0,0,.32);
     font-family: "Bebas Neue", sans-serif;
+    font-weight:200;
+    font-size:124px;
 }
 
-header + *{
-    margin-top:170px;
-    filter:none;
-}
-
-.header__items ul, .wrapper{
-    font-size:80px;
-    line-height: 0;
-    flex:1;
-    display:flex;
-}
-
-.header__logo img{
-    height:120px;
-}
-
-.header__logo a img.logo_box:hover + img.logo_text,
-.header__logo a img.logo_text:hover {
-    transition:0.3s;
-    filter: grayscale(100%) brightness(200%);
-}
-
-.logo_text{
-    transition:0.3s;
-}
-
-.header__logo, .header__items{
-    display:flex;
-    flex:1;
-    align-items: center;
-}
-
-.header__logo{
-    padding-left:2%;
-}
-
-.header__items ul{
-    display:flex;
-    flex:1;
-    justify-content: flex-end;
-}
-
-.header__items li{
-    padding-right:5%;
-}
-
-header li{
-    list-style: none;
-}
-
-@media screen and (max-width: 1700px) {
-}
-
-/** Footer **/
-footer{
-    background: conic-gradient(
-    from 0 at 50% 25%,
-    #ffffff 85deg,
-    #3578be 30deg 95deg,
-    #065abc 30deg 265deg,
-    #3578be 240deg 275deg,
-    #ffffff 240deg
-    );
-    display: flex;
-    image-rendering: smooth;
-    padding-top:13%;
-    margin-top:10%;
-    color: white;
-    text-align: center;
-    width:100%;
-    /*padding-left:1%;
-    padding-right:1%;*/
-    flex-direction:column;
-}
-
-.footer_top{
-    display:flex;
-    flex-direction:column;
-    background-color:#065abc;
-    align-items: center;
-}
-
-.footer_logo{
-    filter: brightness(0) invert(1);
-    height:50%;
-}
-
-.footer_line{
+/** à remplacer par le même visuel que la page contact*/
+.page_info{
     color:white;
-    width:10%;
-}
-
-.footer_socials{
-    padding-top:1%;
-    display:flex;
-    width:10%;
-    padding-bottom:1%;
-}
-
-.footer_socials a, .footer_socials img{
-    display:flex;
-    flex:1;
-    width:50%;
-    padding:5%;
-}
-
-.footer_bottom{
-    background-color:#212121;
-    color:#636363;
+    background-color: #024EAE;
+    font-size:60px;
+    text-align:center;
+    padding:2%;
 }
 
 /** Partie design de fond */
@@ -220,12 +78,6 @@ footer{
 
 .about_info h2, .about_form_gradiant h2{
     color:white;
-}
-
-h2{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight:200;
-    font-size:124px;
 }
 
 .about_info li{
@@ -261,139 +113,12 @@ h2{
     background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(2, 78, 174, 1) 61.5%);
 }
 
-/** Partie du css relatif au système de cartes **/
-
-.card_list{
+.gradiant_end_blue{
+    padding-top:25%;
+    padding-left:5%;
+    padding-right:5%;
     display:flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-}
-
-.card{
-    display:flex;
-    width:500px;
-    height:600px;
-    flex-direction:column;
-    border-radius: 5px;
-    border-style:solid;
-    border-color:#00bff3;
-    background:gray;
-    position:relative;
-}
-
-.card:hover{
-    border-color:#0087ac;
-}
-
-.card_back, .card_back img{
-    display:flex;
-    width:100%;
-    height:100%;
-}
-
-.card_overlay{
-    display:flex;
-    position:absolute;
-    width:100%;
-    height:100%;
-    align-items: flex-end;
-    margin-left:5%;
-    transition:0.3s;
-}
-
-.card_name{
-    margin-right:5%;
-}
-
-.card_name, .card_date{
-    opacity:0%;
-    display:flex;
-    transition:0.3s;
-}
-
-.card_overlay:hover .card_name, .card_overlay:hover .card_date{
-    opacity:100%;
-    transition:0.3s;
-}
-
-/** Evènements **/
-#Event1 {
-    background-size: cover;
-    background-color: blue;
-}
-#Event2 {
-    background-size: cover;
-    background-color: red;
-}
-#Event3 {
-    background-size: cover;
-    background-color: green;
-}
-#Event4 {
-    background-size: cover;
-    background-color: yellow;
-}
-
-.content-events{
-    display: grid ;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-
-/** Formulaire de contact **/
-
-.about_form{
-    display: flex;
-    flex-direction: column;
-    border-color:#00bff3;
-    border-style: solid;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.about_form label{
-    padding-top:10px;
-}
-
-.about_form_top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about_form_name, .about_form_mail{
-    display:flex;
-    flex-direction: column;
-    flex:1;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-.about_form_bottom{
-    padding-left: 2px;
-    padding-right: 2px;
-    flex:1;
-}
-
-textarea{
-    resize: none;
-}
-
-.submit-button{
-    width: 100px;
-    height: 30px;
-    background-color: #0087ac;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.note{
-    font-size: xx-small;
-    color: grey;
-    margin-top: 10px;
+    background: linear-gradient(1.5deg,rgba(255, 255, 255, 1) 61%, rgba(0, 191, 243, 1) 61.5%);
 }
 
 /** Barre d'easter egg */
@@ -408,8 +133,20 @@ textarea{
     height:60px;
     width:500px;
     padding-left:1%;
-    font-size:18px;
     border-radius:5px;
     border-color:#00BFF3;
     font-size:larger;
+}
+
+.easter_egg{
+    transition:0.3s;
+}
+
+.easter_egg:hover{
+    filter:invert();
+    transition: 0.3s;
+}
+
+.easter_egg img{
+    width:25px;
 }
