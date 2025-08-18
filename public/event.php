@@ -24,15 +24,14 @@ try {
 $eventName = $event -> getEventNom();
 $eventDate = $event -> getEventDate();
 $eventDesc = $event -> getEventDesc();
-$idAffiche = $event -> getAfficheId();
 
 $WebPage = new WebPage("Evènement - $eventName");
 $WebPage -> appendCssUrl("style/event.css");
 
-$affiche = "<img src='affiche.php' alt='cover'>";
+$affiche = "<img src='affiche.php' alt='cover' class='affiche'>";
 
-if ($idAffiche !== NULL){
-    $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover'>";
+if ($idAffiche = $event -> getAfficheId() !== NULL){
+    $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover' class='affiche'>";
 }
 
 $WebPage->appendContent("<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>

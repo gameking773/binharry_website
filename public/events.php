@@ -2,6 +2,7 @@
 
 use Html\WebPage as WebPage;
 use Entity\Event as Event;
+use Entity\Affiche as Affiche;
 use Entity\Collection\EventCollection as EventCollection;
 
 $WebPage = new WebPage("Événements");
@@ -18,23 +19,18 @@ $WebPage -> appendContent("<div class='page_top'>
 
 foreach (EventCollection::findAll() as $event){
 $eventId = $event->getEventId();
-$idAffiche = $event -> getAfficheId();
 $eventName = $event -> getEventNom();
 $eventDate = $event -> getEventDate();
 
-if ($idAffiche == NULL) {
-    $afficheJpeg = file_get_contents("img/affiche_placeholder.png");
-}
-else {
-    $affiche = new \Entity\Affiche()->findById($idAffiche);
-    $afficheJpeg = $affiche->getJpeg();
+if ($idAffiche = $event -> getAfficheId() !== NULL){
+    $affiche = Affiche::findById($idAffiche);
 }
 
 $WebPage -> appendContent("
                 <div class='card'>
                     <a href='event.php?eventId={$eventId}' class='card_link'>
                         <div class='card_back'>
-                            <img src='affiche.php?afficheId={idAffiche}' alt='cover'>
+                            <img src='miniature.php?afficheId={idAffiche}' alt='cover'>
                         </div>
                         <div class='card_overlay'>
                             <div class='card_name'>

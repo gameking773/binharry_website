@@ -1,3 +1,8 @@
 .event_panel{
+    display:flex;
     background:url("../img/event-panel.svg");
+}
+
+.affiche{
+    display:flex;
 }
