@@ -28,17 +28,15 @@ $idAffiche = $event -> getAfficheId();
 
 $webpage = new WebPage("Evènement - $eventName");
 
-$webpage->appendContent(<<<HTML
-<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
-HTML);
+$affiche = "<img src='affiche.php' alt='cover'>";
 
 if ($idAffiche !== NULL){
-    $webpage -> appendContent("\n\t\t\t\t<img src='affiche.php?afficheId={idAffiche}' alt='cover'>");
-} else {
-    $webpage -> appendContent("\n\t\t\t\t<img src='affiche.php' alt='cover'>");
+    $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover'>";
 }
 
-$webpage->appendContent("\n\t\t\t\t<div class='description'>
+$webpage->appendContent("<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
+                {$affiche}
+                <div class='description'>
                     {$eventDesc}
                 </div>");
 
