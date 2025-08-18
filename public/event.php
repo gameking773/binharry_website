@@ -26,7 +26,8 @@ $eventDate = $event -> getEventDate();
 $eventDesc = $event -> getEventDesc();
 $idAffiche = $event -> getAfficheId();
 
-$webpage = new WebPage("Evènement - $eventName");
+$WebPage = new WebPage("Evènement - $eventName");
+$WebPage -> appendCssUrl("style/event-card.css");
 
 $affiche = "<img src='affiche.php' alt='cover'>";
 
@@ -34,10 +35,10 @@ if ($idAffiche !== NULL){
     $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover'>";
 }
 
-$webpage->appendContent("<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
+$WebPage->appendContent("<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
                 {$affiche}
                 <div class='description'>
                     {$eventDesc}
                 </div>");
 
-echo $webpage->toHTML();
+echo $WebPage->toHTML();
