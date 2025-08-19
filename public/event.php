@@ -40,18 +40,23 @@ $WebPage->appendContent("
                         {$affiche}
                     </div>
                     <div class='event_right'>
-                        <div class='event_header'>
-                            <h2>
-                                {$eventName}
-                            </h2>
-                            <h3>
-                                {$eventDate->format('d/m/Y')}
-                            </h3>
-                        </div>
-                        <p class='event_info'>
+                        <h2 class='event_header'>
+                            {$eventName}
+                        </h2>
+                        <h3 class='event_date'>
+                            {$eventDate->format('d/m/Y')}
+                        </h3>
+                    </div>
+                </div>
+                
+                <div class='event_info'>
+                    <img src='img/event-info_transition.svg' class='event_transition'>
+                    <div class='event_content'>
+                        <p class='event_text'>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic?
                         </p>
                     </div>
+                    <img src='img/event-info_transition.svg' class='event_transition'>
                 </div>");
 /** {$eventDesc} */
 echo $WebPage->toHTML();
