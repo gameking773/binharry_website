@@ -34,29 +34,28 @@ if ($idAffiche = $event -> getAfficheId() !== NULL){
     $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover' class='affiche'>";
 }
 
-$WebPage->appendContent("
-                <div class='event_panel'>
-                    <div class='event_left'>
-                        {$affiche}
+$WebPage->appendContent("<div class='event_btop'></div>
+                <div class='event_page'>
+                    <div class='event_panel'>
+                        <div class='event_panel_left'>
+                            <h2>
+                                {$eventName}
+                            </h2>
+                            <h3>
+                                {$eventDate->format('d/m/Y')}
+                            </h3>
+                        </div>
+                        <div class='event_panel_right'>
+                            {$affiche}
+                        </div>
                     </div>
-                    <div class='event_right'>
-                        <h2 class='event_header'>
-                            {$eventName}
-                        </h2>
-                        <h3 class='event_date'>
-                            {$eventDate->format('d/m/Y')}
-                        </h3>
-                    </div>
-                </div>
-                
-                <div class='event_info'>
-                    <img src='img/event-info_transition.svg' class='event_transition'>
-                    <div class='event_content'>
-                        <p class='event_text'>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic?
-                        </p>
-                    </div>
-                    <img src='img/event-info_transition.svg' class='event_transition'>
+
+                    <h2>DESCRIPTION</h2>
+
+                    <p>
+                        {$eventDesc}
+                    </p>
+                <img src='img/dblue_transition.svg' class='dblue_transition_end'>
                 </div>");
-/** {$eventDesc} */
+
 echo $WebPage->toHTML();
