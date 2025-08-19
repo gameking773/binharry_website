@@ -34,20 +34,24 @@ if ($idAffiche = $event -> getAfficheId() !== NULL){
     $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover' class='affiche'>";
 }
 
-$WebPage->appendContent("<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
+$WebPage->appendContent("
                 <div class='event_panel'>
-                    {$affiche}
-                    <div class='event_header'>
-                        <h2>    
-                            {$eventName}
-                        </h2>
-                        <h3>
-                            {$eventDate->format('d/m/Y')}
-                        </h3>
+                    <div class='event_left'>
+                        {$affiche}
                     </div>
-                    <p class='event_info'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic?
-                    </p>
+                    <div class='event_right'>
+                        <div class='event_header'>
+                            <h2>
+                                {$eventName}
+                            </h2>
+                            <h3>
+                                {$eventDate->format('d/m/Y')}
+                            </h3>
+                        </div>
+                        <p class='event_info'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reiciendis fugiat laboriosam cum fuga sequi delectus pariatur modi molestias hic?
+                        </p>
+                    </div>
                 </div>");
 /** {$eventDesc} */
 echo $WebPage->toHTML();
