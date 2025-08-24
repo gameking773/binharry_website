@@ -25,7 +25,7 @@
 
 .event_panel{
     display:flex;
-    background:url('../img/event_panel.svg');
+    background:url('../img/svg/event_panel.svg');
     width:100%;
     background-size: 100% 100%;
     background-color: white;

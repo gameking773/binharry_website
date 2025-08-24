@@ -55,7 +55,7 @@ $WebPage->appendContent("<div class='event_btop'></div>
                     <p>
                         {$eventDesc}
                     </p>
-                <img src='img/dblue_transition.svg' class='dblue_transition_end'>
+                <img src='img/svg/dblue_transition.svg' class='dblue_transition_end'>
                 </div>");
 
 echo $WebPage->toHTML();
