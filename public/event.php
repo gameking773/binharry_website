@@ -24,22 +24,38 @@ try {
 $eventName = $event -> getEventNom();
 $eventDate = $event -> getEventDate();
 $eventDesc = $event -> getEventDesc();
-$idAffiche = $event -> getAfficheId();
 
-$webpage = new WebPage("Evènement - $eventName");
+$WebPage = new WebPage("Evènement - $eventName");
+$WebPage -> appendCssUrl("style/event.css");
 
-$webpage->appendContent(<<<HTML
-<h1>{$eventName} - {$eventDate->format('d/m/Y')}</h1>
-HTML);
+$affiche = "<img src='affiche.php' alt='cover' class='affiche'>";
 
-if ($idAffiche !== NULL){
-    $webpage -> appendContent("\n\t\t\t\t<img src='affiche.php?afficheId={idAffiche}' alt='cover'>");
-} else {
-    $webpage -> appendContent("\n\t\t\t\t<img src='affiche.php' alt='cover'>");
+if ($idAffiche = $event -> getAfficheId() !== NULL){
+    $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover' class='affiche'>";
 }
 
-$webpage->appendContent("\n\t\t\t\t<div class='description'>
-                    {$eventDesc}
+$WebPage->appendContent("<div class='event_btop'></div>
+                <div class='event_page'>
+                    <div class='event_panel'>
+                        <div class='event_panel_left'>
+                            <h2>
+                                {$eventName}
+                            </h2>
+                            <h3>
+                                {$eventDate->format('d/m/Y')}
+                            </h3>
+                        </div>
+                        <div class='event_panel_right'>
+                            {$affiche}
+                        </div>
+                    </div>
+
+                    <h2>DESCRIPTION</h2>
+
+                    <p>
+                        {$eventDesc}
+                    </p>
+                <img src='img/dblue_transition.svg' class='dblue_transition_end'>
                 </div>");
 
-echo $webpage->toHTML();
+echo $WebPage->toHTML();

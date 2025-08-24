@@ -12,6 +12,7 @@ class Affiche
 {
     private int $afficheId;
     private string $jpeg;
+    private string $minia;
 
     /**
      * Returns the instance of Affiche which is identified by the id in parameter
@@ -53,5 +54,13 @@ class Affiche
     public function getJpeg(): string
     {
         return $this->jpeg;
+    }
+
+    /**
+     * Get the value of minia
+     */
+    public function getMinia(): string
+    {
+        return $this->minia;
     }
 };
