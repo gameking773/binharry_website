@@ -151,17 +151,3 @@ h2 {
     font-size: larger;
     padding-bottom:4.25%;
 }
-
-.easter_egg {
-    transition: 0.3s;
-    user-select: none;
-}
-
-.easter_egg:hover {
-    filter: invert();
-    transition: 0.3s;
-}
-
-.easter_egg img {
-    width: 2vw;
-}

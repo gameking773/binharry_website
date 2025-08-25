@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="dessin2_2.svg"
+   sodipodi:docname="doublebox_end.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="0.52221046"
-     inkscape:cx="1129.8127"
-     inkscape:cy="606.07748"
+     inkscape:zoom="2.9540685"
+     inkscape:cx="1140.1225"
+     inkscape:cy="83.444241"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="1912"
@@ -45,15 +45,13 @@
        width="136.09155"
        height="31.509651"
        x="15.931251"
-       y="-41.392616"
-       transform="scale(1,-1)" />
+       y="9.8829651" />
     <rect
-       style="fill:#0087ac;fill-opacity:1;stroke-width:0.444927"
+       style="fill:#0087ac;fill-opacity:1;stroke-width:0.455526"
        id="rect2"
        width="444.84781"
-       height="16.71979"
+       height="17.525881"
        x="48.639389"
-       y="-41.142368"
-       transform="scale(1,-1)" />
+       y="9.3271217" />
   </g>
 </svg>
