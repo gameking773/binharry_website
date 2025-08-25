@@ -189,7 +189,7 @@ class WebPage
                     </div>
 
                     <footer>
-                        <img src="img/footer_transition.svg" class='footer_transition'>
+                        <img src="img/svg/footer_transition.svg" class='footer_transition'>
                         <div class='footer_top'>
                             <h2>BIN'HARRY</h2>
                             <hr class='footer_line'>
