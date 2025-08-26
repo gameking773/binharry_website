@@ -12,7 +12,7 @@ try {
         $photoId = intval($photoId);
         $photo = Photo::findById($photoId);
         header('Content-Type: image/jpeg');
-        echo $photo->getJpeg();
+        echo readfile($photo->getJpeg());
     } else {
         header('Content-Type: image/jpeg');
         echo file_get_contents("img/affiche_placeholder.png");
