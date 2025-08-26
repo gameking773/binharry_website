@@ -48,7 +48,7 @@ class Photo
      * @param string $jpeg new jpeg of the Photo.
      * @return void
      */
-    private function setDescription(string $jpeg): void
+    private function setJpeg(string $jpeg): void
     {
         $this->jpeg = $jpeg;
     }
