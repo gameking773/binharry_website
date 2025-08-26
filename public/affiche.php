@@ -12,7 +12,7 @@ try {
         $afficheId = intval($afficheId);
         $affiche = Affiche::findById($afficheId);
         header('Content-Type: image/jpeg');
-        echo readfile($affiche->getJpeg());
+        echo readfile($affiche->getMinia());
     } else {
         header('Content-Type: image/jpeg');
         echo file_get_contents("img/affiche_placeholder.png");

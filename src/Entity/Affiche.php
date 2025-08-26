@@ -24,8 +24,8 @@ class Affiche
     {
         $stmt = MyPDO::getInstance()->prepare(
             <<<'SQL'
-            SELECT afficheId, jpeg
-            FROM evenement
+            SELECT afficheId, jpeg, minia
+            FROM affiche
             WHERE afficheId = ?
             SQL
         );
