@@ -13,7 +13,9 @@
             "email": "ruddy.gobillard@outlook.fr"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-ctype": "*"
+    },
     "scripts": {
         "start": [
             "Composer\\Config::disableProcessTimeout",
