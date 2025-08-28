@@ -15,9 +15,10 @@ $WebPage -> appendContent("
 </div>
 <div class='part_emblem'>
     <div class='logo'> 
-        <img src='public/img/logo-emblem.png'>
+        <img src='img/logo-emblem.png'>
     </div>
     <div class='description'>
+        <h2>Emblem</h2>
         <p>
         Voici Emblem Reims, une entreprise qui vous propose des tas de cadeaux et de réductions, que ce soit dans les restos, les cafés, les loisirs, et mêmes pour les vacances d'Hiver 🌨️ !<br>
 Pour bénéficier de ces réductions, c'est simple :<br>
@@ -25,6 +26,25 @@ A partir du 8 Septembre, la billetterie sera ouverte dans la bio instagram de em
 La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un relai pour récupérer votre carte, évidemment, il s'agira de notre local.<br>
         </p>
     </div>
-</div>");
+</div>
+<div class='part_adherer'>
+    <div class='logo'> 
+        <img src='img/header_logo_box.png'>
+    </div>
+    <div class='description'>
+        <h2>Adhérer au BDE</h2>
+        <p>
+        Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€<br>
+        Les avantages qui vous sont donnés avec une adhésion sont :<br>
+            • Avantages lors des tombola<br>
+            • Prix préférentiels lors des sorties<br>
+            • Un rôle qui fait joli sur discord, afin de montrer à quel point vous êtes riches.<br>
+            • Articles gratuits lors des ventes (crêpes, boissons etc.)<br>
+        Si vous avez des suggestions d'avantages, n'hésitez pas à nous les soumettre<br>
+        Pour adhérer, contactez nous !!<br>
+        </p>
+    </div>
+</div>
+");
 
 echo $WebPage -> toHTML();
