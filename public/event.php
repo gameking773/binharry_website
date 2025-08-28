@@ -24,14 +24,16 @@ try {
 $eventName = $event -> getEventNom();
 $eventDate = $event -> getEventDate();
 $eventDesc = $event -> getEventDesc();
+$idAffiche = $event->getAfficheId();
+
 
 $WebPage = new WebPage("Evènement - $eventName");
 $WebPage -> appendCssUrl("style/event.css");
 
 $affiche = "<img src='affiche.php' alt='cover' class='affiche'>";
 
-if ($idAffiche = $event -> getAfficheId() !== NULL){
-    $affiche = "<img src='affiche.php?afficheId={idAffiche}' alt='cover' class='affiche'>";
+if ($idAffiche !== NULL) {
+    $affiche = "<img src='affiche.php?afficheId={$idAffiche}' alt='cover' class='affiche'>";
 }
 
 $WebPage->appendContent("<div class='event_btop'></div>

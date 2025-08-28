@@ -21,8 +21,9 @@ foreach (EventCollection::findAll() as $event){
     $eventId = $event->getEventId();
     $eventName = $event -> getEventNom();
     $eventDate = $event -> getEventDate();
+    $idAffiche = $event->getAfficheId();
 
-    if ($idAffiche = $event -> getAfficheId() !== NULL){
+    if ($idAffiche !== NULL) {
         $affiche = Affiche::findById($idAffiche);
     }
 
@@ -30,7 +31,7 @@ foreach (EventCollection::findAll() as $event){
                     <div class='card'>
                         <a href='event.php?eventId={$eventId}' class='card_link'>
                             <div class='card_back'>
-                                <img src='miniature.php?afficheId={idAffiche}' alt='cover'>
+                                <img src='miniature.php?afficheId={$idAffiche}' alt='cover'>
                             </div>
                             <div class='card_overlay'>
                                 <div class='card_name'>
