@@ -179,6 +179,7 @@ class WebPage
                         <nav class='header__right'>
                             <ol class='header__sections'>
                                 <li><a href='events.php'>ÉVÉNEMENTS</a></li>
+                                <li><a href='partenariats.php'>PARTENARIATS</a></li>
                                 <li><a href='about.php'>CONTACT</a></li>
                             </ol>
                         </nav>
