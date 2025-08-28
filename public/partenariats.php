@@ -69,6 +69,8 @@ La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un 
         Déjà commandé chez eux ? On a quelque chose pour ça aussi.<br>
         Avec le code BINHARRY, économisez 10% sur votre commande !<br>
         </p>
+    </div>
+</div>
 ");
 
 echo $WebPage -> toHTML();
