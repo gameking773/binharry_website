@@ -52,8 +52,8 @@ La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un 
     <div class='description'>
         <a href='https://nordvpn.com/fr/'><h2>Nord VPN</h2></a>
         <p>
-        Votre BDE préféré a fait une collaboration commerciale avec Nord Vpn !
-        Avec le code : konect147, vous soutenez le BDE tout en économisant 15% sur l'abonnement 2 ans à Nord VPN ! 
+        Votre BDE préféré a fait une collaboration commerciale avec Nord Vpn !<br>
+        Avec le code : konect147, vous soutenez le BDE tout en économisant 15% sur l'abonnement 2 ans à Nord VPN ! <br>
         </p>
     </div>
 </div>
@@ -64,10 +64,10 @@ La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un 
     <div class='description'>
         <a href='https://fr.weareholy.com/'><h2>Holy</h2></a>
         <p>
-        Votre BDE favori a aussi conclu une collaboration commerciale avec Holy !
-        Avec le code : BINHARRY5, vous soutenez le BDE tout en économisant 5% sur votre première commande ! 
-        Déjà commandé chez eux ? On a quelque chose pour ça aussi.
-        Avec le code BINHARRY, économisez 10% sur votre commande !
+        Votre BDE favori a aussi conclu une collaboration commerciale avec Holy !<br>
+        Avec le code : BINHARRY5, vous soutenez le BDE tout en économisant 5% sur votre première commande ! <br>
+        Déjà commandé chez eux ? On a quelque chose pour ça aussi.<br>
+        Avec le code BINHARRY, économisez 10% sur votre commande !<br>
         </p>
 ");
 
