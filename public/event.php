@@ -58,6 +58,8 @@ $WebPage->appendContent("<div class='event_btop'></div>
                         {$eventDesc}
                     </p>");
 
+
+
 $WebPage->appendContent("
                     <img src='img/svg/dblue_transition.svg' class='dblue_transition_end'>
                 </div>");

@@ -10,6 +10,7 @@ class Photo
 {
     private int $id;
     private string $jpeg;
+    private int $eventId;
 
     /**
      * Get the value of afficheId
@@ -25,6 +26,14 @@ class Photo
     public function getJpeg(): string
     {
         return $this->jpeg;
+    }
+
+    /**
+     * Get the value of eventId
+     */
+    public function getEventId(): int
+    {
+        return $this->eventId;
     }
 
     /**
