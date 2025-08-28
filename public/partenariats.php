@@ -18,7 +18,7 @@ $WebPage -> appendContent("
         <img src='img/logo-emblem.png'>
     </div>
     <div class='description'>
-        <h2>Emblem</h2>
+        <a href='https://www.emblemreims.com/home'><h2>Emblem</h2></a>
         <p>
         Voici Emblem Reims, une entreprise qui vous propose des tas de cadeaux et de réductions, que ce soit dans les restos, les cafés, les loisirs, et mêmes pour les vacances d'Hiver 🌨️ !<br>
 Pour bénéficier de ces réductions, c'est simple :<br>
@@ -45,6 +45,30 @@ La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un 
         </p>
     </div>
 </div>
+<div class='part_nordvpn'>
+    <div class='logo'> 
+        <img src='img/logo-nordvpn.jpg'>
+    </div>
+    <div class='description'>
+        <a href='https://nordvpn.com/fr/'><h2>Nord VPN</h2></a>
+        <p>
+        Votre BDE préféré a fait une collaboration commerciale avec Nord Vpn !
+        Avec le code : konect147, vous soutenez le BDE tout en économisant 15% sur l'abonnement 2 ans à Nord VPN ! 
+        </p>
+    </div>
+</div>
+<div class='part_holy'>
+    <div class='logo'> 
+        <img src='img/logo-holy.png'>
+    </div>
+    <div class='description'>
+        <a href='https://fr.weareholy.com/'><h2>Holy</h2></a>
+        <p>
+        Votre BDE favori a aussi conclu une collaboration commerciale avec Holy !
+        Avec le code : BINHARRY5, vous soutenez le BDE tout en économisant 5% sur votre première commande ! 
+        Déjà commandé chez eux ? On a quelque chose pour ça aussi.
+        Avec le code BINHARRY, économisez 10% sur votre commande !
+        </p>
 ");
 
 echo $WebPage -> toHTML();
