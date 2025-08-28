@@ -21,6 +21,7 @@
 
 .event_page img{
     background:white;
+    margin-bottom:20%;
 }
 
 .event_panel{
@@ -37,6 +38,11 @@
     flex:2;
     align-items: center;
     justify-content: center;
+}
+
+.event_panel_left h2{
+    width:75%;
+    text-align: center;
 }
 
 .event_panel_right{
