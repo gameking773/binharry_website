@@ -206,7 +206,7 @@ class WebPage
                         <div class='footer_bottom'>
                             <p>
                                 @2025 Bin'Harry |
-                                <a href='about.php'>Mentions Légales</a>
+                                <a href='mentions-legales.php'>Mentions Légales</a>
                             </p>
                         </div>
                     </footer>
