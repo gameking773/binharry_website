@@ -48,7 +48,7 @@ $WebPage -> appendContent("<div class='page_top'>
                     <div class='triplebox_main'>
                         <h2>Le site du BDE</h2>
                         <p>
-                            Ce site vous permet de voir les archives des évènements passés (souriez, vous serez peut être sur les photos), de vous informer des prochaines dates évènementielles, et de nous contacter par mail.
+                            Ce site vous permet de voir les archives des évènements passés, de vous informer des prochaines dates évènementielles, et de nous contacter par mail.
                         </p>
                     </div>
                     <img src='img/svg/triplebox_end.svg'>
