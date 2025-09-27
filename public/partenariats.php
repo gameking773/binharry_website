@@ -27,7 +27,7 @@ $WebPage -> appendContent("<div class='page_top'>
                     </div>
                     <div class='part_mid'>
                         <a href='https://nordvpn.com/fr/'>
-                            <img src='img/logo-nordvpn.jpg'>
+                            <img src='img/logo-nordvpn.png'>
                         </a>
                         <p>
                             Votre BDE préféré a fait une collaboration commerciale avec Nord Vpn !<br>
