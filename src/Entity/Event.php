@@ -26,31 +26,11 @@ class Event
     }
 
     /**
-     * Set the value of eventId
-     */
-    private function setEventId(int $eventId): self
-    {
-        $this->eventId = $eventId;
-
-        return $this;
-    }
-
-    /**
      * Get the value of eventNom
      */
     public function getEventNom(): String
     {
         return $this->eventNom;
-    }
-
-    /**
-     * Set the value of eventNom
-     */
-    public function setEventNom(String $eventNom): self
-    {
-        $this->eventNom = $eventNom;
-
-        return $this;
     }
 
     /**
@@ -62,16 +42,6 @@ class Event
     }
 
     /**
-     * Set the value of eventDate
-     */
-    public function setEventDate(DateTime $eventDate): self
-    {
-        $this->eventDate = $eventDate;
-
-        return $this;
-    }
-
-    /**
      * Get the value of eventDesc
      */
     public function getEventDesc(): String
@@ -80,31 +50,11 @@ class Event
     }
 
     /**
-     * Set the value of eventDesc
-     */
-    public function setEventDesc(String $eventDesc): self
-    {
-        $this->eventDesc = $eventDesc;
-
-        return $this;
-    }
-
-    /**
      * Get the value of afficheId
      */
     public function getAfficheId(): ?int
     {
         return $this->afficheId;
-    }
-
-    /**
-     * Set the value of afficheId
-     */
-    public function setAfficheId(?int $afficheId): self
-    {
-        $this->afficheId = $afficheId;
-
-        return $this;
     }
 
     public function __construct(int $eventId, String $eventNom, DateTime $eventDate, String $eventDesc, ?int $afficheId){
