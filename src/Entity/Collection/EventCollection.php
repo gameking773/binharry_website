@@ -22,6 +22,7 @@ class EventCollection
             <<<'SQL'
                 SELECT eventId, eventNom, eventDate, eventDesc, afficheId
                 FROM evenement
+                ORDER BY eventDate DESC
                 SQL
         );
 
