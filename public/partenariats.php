@@ -13,40 +13,42 @@ $WebPage -> appendContent("<div class='page_top'>
                     </svg>
                 </div>
 
+                <img src='img/svg/blue_dblue_grad.svg' class='part_transition'>
+
                 <div class='part_box'>
                     <div class='part_left'>
-                        <a href='https://www.emblemreims.com/home'>
+                        <a href='https://www.emblemreims.com/home' class='part_image'>
                             <img src='img/logo-emblem.png'>
                         </a>
-                        <p>
-                            Voici Emblem Reims, une entreprise qui vous propose des tas de cadeaux et de réductions, que ce soit dans les restos, les cafés, les loisirs, et mêmes pour les vacances d'Hiver 🌨️ !<br>
-                            Pour bénéficier de ces réductions, c'est simple :<br>
-                            A partir du 8 Septembre, la billetterie sera ouverte dans la bio instagram de emblem reims.<br>
-                            La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un relai pour récupérer votre carte, évidemment, il s'agira de notre local.<br>
+                        <p class='part_text'>
+                            &nbsp&nbsp&nbsp Voici Emblem Reims, une entreprise qui vous propose des tas de cadeaux et de réductions, que ce soit dans les restos, les cafés, les loisirs, et mêmes pour les vacances d'Hiver 🌨️ ! <br>&nbsp<br>
+                            &nbsp&nbsp&nbsp Pour bénéficier de ces réductions, c'est simple : <br>
+                            A partir du 8 Septembre, la billetterie sera ouverte dans la bio instagram de emblem reims. <br>&nbsp<br>
+                            &nbsp&nbsp&nbsp La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un relai pour récupérer votre carte, évidemment, il s'agira de notre local.
                         </p>
                     </div>
                     <div class='part_mid'>
-                        <a href='https://nordvpn.com/fr/'>
+                        <a href='https://nordvpn.com/fr/' class='part_image'>
                             <img src='img/logo-nordvpn.png'>
                         </a>
-                        <p>
-                            Votre BDE préféré a fait une collaboration commerciale avec Nord Vpn !<br>
-                            Avec le code : konect147, vous soutenez le BDE tout en économisant 15% sur l'abonnement 2 ans à Nord VPN ! <br>
+                        <p class='part_text'>
+                            &nbsp&nbsp&nbspVotre BDE préféré a fait une collaboration commerciale avec Nord Vpn ! <br>&nbsp<br>
+                            Avec le code : konect147, vous soutenez le BDE tout en économisant 15% sur l'abonnement 2 ans à Nord VPN !
                         </p>
                     </div>
                     <div class='part_right'>
-                        <a href='https://fr.weareholy.com/'>
+                        <a href='https://fr.weareholy.com/' class='part_image'>
                             <img src='img/logo-holy.png'>
                         </a>
-                        <p>
-                            Votre BDE favori a aussi conclu une collaboration commerciale avec Holy !<br>
-                            Avec le code : BINHARRY5, vous soutenez le BDE tout en économisant 5% sur votre première commande ! <br>
-                            Déjà commandé chez eux ? On a quelque chose pour ça aussi.<br>
-                            Avec le code BINHARRY, économisez 10% sur votre commande !<br>
+                        <p class='part_text'>
+                            &nbsp&nbsp&nbsp Votre BDE favori a aussi conclu une collaboration commerciale avec Holy !<br>&nbsp<br>
+                            &nbsp&nbsp&nbsp Avec le code &#34BINHARRY5&#34, vous soutenez le BDE tout en économisant 5% sur votre première commande !<br>&nbsp<br>
+                            &nbsp&nbsp&nbsp Déjà commandé chez eux ? On a quelque chose pour ça aussi. Avec le code &#34BINHARRY&#34, économisez 10% sur votre commande !
                         </p>
                     </div>
                 </div>
                 
+                <img src='img/svg/dblue_transparent_grad.svg' class='part_transition'>
 
                 <div class='part_adherer'>
                     <div class='logo'> 
