@@ -51,20 +51,21 @@ $WebPage -> appendContent("<div class='page_top'>
                 <img src='img/svg/dblue_transparent_grad.svg' class='part_transition'>
 
                 <div class='part_adherer'>
-                    <div class='logo'> 
+                    <div class='part_adh_logo'>
                         <img src='img/header_logo_box.png'>
                     </div>
-                    <div class='description'>
+                    
+                    <div class='part_adh_description'>
                         <h2>Adhérer au BDE</h2>
                         <p>
-                        Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€<br>
-                        Les avantages qui vous sont donnés avec une adhésion sont :<br>
-                            • Avantages lors des tombola<br>
-                            • Prix préférentiels lors des sorties<br>
-                            • Un rôle qui fait joli sur discord, afin de montrer à quel point vous êtes riches.<br>
-                            • Articles gratuits lors des ventes (crêpes, boissons etc.)<br>
-                        Si vous avez des suggestions d'avantages, n'hésitez pas à nous les soumettre<br>
-                        Pour adhérer, contactez nous !!<br>
+                            Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€ <br>&nbsp<br>
+                            Les avantages qui vous sont donnés avec une adhésion sont : <br>
+                            &nbsp&nbsp&nbsp • Avantages lors des tombola <br>
+                            &nbsp&nbsp&nbsp • Prix préférentiels lors des sorties <br>
+                            &nbsp&nbsp&nbsp • Un rôle qui fait joli sur discord, afin de montrer à quel point vous êtes riches. <br>
+                            &nbsp&nbsp&nbsp • Articles gratuits lors des ventes (crêpes, boissons etc.) <br>&nbsp<br>
+                            Si vous avez des suggestions d'avantages, n'hésitez pas à nous les soumettre <br>&nbsp<br>
+                            Pour adhérer, contactez nous !!
                         </p>
                     </div>
                 </div>");

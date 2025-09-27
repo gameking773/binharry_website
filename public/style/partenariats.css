@@ -48,3 +48,29 @@
 .part_right{
     background-color: #ED8DB7;
 }
+
+.part_adherer{
+    display:flex;
+    flex-direction: column;
+    margin-top:5%;
+}
+
+.part_adh_logo{
+    display:flex;
+    justify-content: center;
+}
+
+.part_adh_description{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part_adh_description h2{
+    color:#00bff3;
+}
+
+.part_adh_description p{
+    font-size: 2rem;
+}
