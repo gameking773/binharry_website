@@ -179,6 +179,7 @@ class WebPage
                         <nav class='header__right'>
                             <ol class='header__sections'>
                                 <li><a href='events.php'>ÉVÉNEMENTS</a></li>
+                                <li><a href='partenariats.php'>PARTENARIATS</a></li>
                                 <li><a href='about.php'>CONTACT</a></li>
                             </ol>
                         </nav>
@@ -205,7 +206,7 @@ class WebPage
                         <div class='footer_bottom'>
                             <p>
                                 @2025 Bin'Harry |
-                                <a href='about.php'>Mentions Légales</a>
+                                <a href='mentions-legales.php'>Mentions Légales</a>
                             </p>
                         </div>
                     </footer>

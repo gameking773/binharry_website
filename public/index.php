@@ -31,7 +31,7 @@ $WebPage -> appendContent("<div class='page_top'>
                             Créer une bonne cohésion entre les étudiants du département, peu importe l'année d'étude, grace à des sorties organisées régulièrement chaques mois, traditionnellement le Jeudi soir, sois simplement au bar, sois dans des activités plus ludiques telles qu'au Laser Game, au Bowling et bien plus. 
                             L'évènement le plus connu étant la LAN, organisée chaque année, un évènement qui permet aux étudiants comme aux professeurs de jouer aux jeux vidéos ensembles durant un après midi entier en Avril.
                             <br><br>
-                            Nous proposons aux étudiants des promotions intéressantes en partenariat avec des entreprises, telles que Emblem Reims (faire un lien vers leur site), qui proposent une carte offrant des réductions sur de nombreux établissements.
+                            Nous proposons aux étudiants des promotions intéressantes en partenariat avec des entreprises, telles que Emblem Reims, qui proposent une carte offrant des réductions sur de nombreux établissements.
                             <br><br>
                             Nous mettons également à disposition de tous un serveur discord, dans le quel nous pouvons rire, nous entraider, et jouer ensemble dans une ambiance décontractée.
                         </p>

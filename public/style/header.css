@@ -59,6 +59,12 @@ li{
     padding-right:5%;
 }
 
+@media screen and (max-width: 1600px) {
+    li{
+        font-size:3rem;
+    }
+}
+
 /* Espace supplémentaire pour le header */
 header + * {
     margin-top:140px;
