@@ -10,7 +10,7 @@ use Entity\Affiche as Affiche;
 $eventId = intval($_GET["eventId"]);
 
 if (empty($eventId)) {
-    header('Location: events.php');
+    header('Location: evenements.php');
     exit();
 }
 
