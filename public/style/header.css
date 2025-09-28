@@ -70,3 +70,9 @@ header + * {
     margin-top:140px;
     filter:none;
 }
+
+/* Partie JS lorsque l'utilisateur scroll */
+
+header.scrolled{
+    
+}

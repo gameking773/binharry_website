@@ -184,7 +184,7 @@ class WebPage
                             </ol>
                         </nav>
                     </header>
-
+                    <script src="script/scroll-header.js"></script>
                     <div class='content'>
                         $this->body
                     </div>
