@@ -169,6 +169,7 @@ class WebPage
                     $this->head
                 </head>
                 <body>
+                    <script src="script/scroll-header.js"></script>
                     <header>
                         <div class='header__left'>
                             <a class='header__logo' href='index.php'>
@@ -184,7 +185,7 @@ class WebPage
                             </ol>
                         </nav>
                     </header>
-                    <script src="script/scroll-header.js"></script>
+                    
                     <div class='content'>
                         $this->body
                     </div>
@@ -195,10 +196,10 @@ class WebPage
                             <h2>BIN'HARRY</h2>
                             <hr class='footer_line'>
                             <div class='footer_socials'>
-                                <a class='logo_box' href='http://www.discord.com/invite/wXpRMds6BC'>
+                                <a href='http://www.discord.com/invite/wXpRMds6BC'>
                                     <img src='img/icon-discord.png' alt='Lien Discord'>
                                 </a>
-                                <a class='logo_box' href='https://www.instagram.com/bdebinharry/'>
+                                <a href='https://www.instagram.com/bdebinharry/'>
                                     <img src='img/icon-instagram.png' alt='Lien Instagram'>
                                 </a>
                             </div>
