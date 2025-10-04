@@ -15,6 +15,12 @@
     padding-bottom:5%;
 }
 
+@media screen and (max-width: 1200px) {
+    .part_box{
+        flex-direction:column;
+    }
+}
+
 .part_left, .part_mid, .part_right{
     display:flex;
     flex-direction:column;
@@ -24,10 +30,7 @@
     padding:1.5%;
 }
 
-.part_image{
-    display: flex;
-    width: 50vh;
-}
+
 
 .part_text{
     display:flex;
@@ -53,9 +56,20 @@
     display:flex;
     flex-direction: column;
     margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
 }
 
-.part_adh_logo{
+.part_image{
+    display:flex;
+    justify-content: center;
+}
+
+.part_image img{
+    max-width:70%;
+}
+
+.part_adh_logo, .part_image{
     display:flex;
     justify-content: center;
 }

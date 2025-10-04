@@ -52,7 +52,7 @@ $WebPage->appendContent("<div class='event_btop'></div>
                         </div>
                     </div>
 
-                    <h2>DESCRIPTION</h2>
+                    <h2 class='event_desc'>DESCRIPTION</h2>
 
                     <p>
                         {$eventDesc}

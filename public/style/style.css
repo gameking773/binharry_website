@@ -59,7 +59,7 @@ h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
     color: #00BFF3;
-    font-size: 9vw; 
+    font-size: 12rem; 
     text-align: center;
 }
 
@@ -131,6 +131,18 @@ h2 {
     transform:scale(-1,-1);
     user-select: none;
     pointer-events: none;
+}
+
+.news{
+    color:white;
+    margin-top: -2px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    background: #00BFF3;
+    flex-direction: column;
+    font-size: 2rem;
+    padding-bottom:25vh;
 }
 
 /** Barre d'easter egg */
