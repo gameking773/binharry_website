@@ -15,6 +15,12 @@
     padding-bottom:5%;
 }
 
+@media screen and (max-width: 1200px) {
+    .part_box{
+        flex-direction:column;
+    }
+}
+
 .part_left, .part_mid, .part_right{
     display:flex;
     flex-direction:column;
@@ -25,8 +31,7 @@
 }
 
 .part_image{
-    display: flex;
-    width: 50vh;
+    width: 15vw;
 }
 
 .part_text{
@@ -53,6 +58,8 @@
     display:flex;
     flex-direction: column;
     margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 .part_adh_logo{
