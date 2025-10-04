@@ -14,6 +14,14 @@ $WebPage -> appendContent("<div class='page_top'>
                     </svg>
                 </div>
 
+                <div class='news'>
+                    <h2>NEWS</h2>
+                    <p>
+                        Aucune news pour le moment.
+                    </p>
+                </div>
+
+
                 <div class='blue_dblue_grad'>
                     <img src='img/svg/blue_dblue_grad.svg'>
                     <h2>Qui sommes-nous ?</h2>

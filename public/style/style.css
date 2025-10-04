@@ -133,6 +133,18 @@ h2 {
     pointer-events: none;
 }
 
+.news{
+    color:white;
+    margin-top: -2px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    background: #00BFF3;
+    flex-direction: column;
+    font-size: 2rem;
+    padding-bottom:25vh;
+}
+
 /** Barre d'easter egg */
 
 .easter_box {
