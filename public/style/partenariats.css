@@ -30,9 +30,7 @@
     padding:1.5%;
 }
 
-.part_image{
-    width: 15vw;
-}
+
 
 .part_text{
     display:flex;
@@ -62,7 +60,16 @@
     margin-right:5%;
 }
 
-.part_adh_logo{
+.part_image{
+    display:flex;
+    justify-content: center;
+}
+
+.part_image img{
+    max-width:70%;
+}
+
+.part_adh_logo, .part_image{
     display:flex;
     justify-content: center;
 }
