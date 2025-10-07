@@ -19,11 +19,13 @@ html, body, input, textarea {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .content {
     font-size: 1.1rem;
     padding-bottom: 4rem;
+    flex:1;
 }
 
 a {
