@@ -39,14 +39,16 @@ if ($idAffiche !== NULL) {
 $WebPage->appendContent("<div class='event_main'>
                     <div class='event_left'>
                         {$affiche}
-                        <h3>
-                            {$eventDate->format('d/m/Y')}
-                        </h3>
                     </div>
                     <div class='event_right'>
-                        <h2>
-                            {$eventName}
-                        </h2>
+                        <div class='event_right_top'>
+                            <h2>
+                                {$eventName}
+                            </h2>
+                            <h3>
+                                {$eventDate->format('d/m/Y')}
+                            </h3>
+                        </div>
                         <p>
                             {$eventDesc}
                         </p>
