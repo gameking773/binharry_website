@@ -35,35 +35,6 @@ $affiche = "<img src='affiche.php' alt='cover'>";
 if ($idAffiche !== NULL) {
     $affiche = "<img src='affiche.php?afficheId={$idAffiche}' alt='cover'>";
 }
-/**
-$WebPage->appendContent("<div class='event_btop'></div>
-                <div class='event_page'>
-                    <div class='event_panel'>
-                        <div class='event_panel_left'>
-                            <h2>
-                                {$eventName}
-                            </h2>
-                            <h3>
-                                {$eventDate->format('d/m/Y')}
-                            </h3>
-                        </div>
-                        <div class='event_panel_right'>
-                            {$affiche}
-                        </div>
-                    </div>
-
-                    <h2 class='event_desc'>DESCRIPTION</h2>
-
-                    <p>
-                        {$eventDesc}
-                    </p>");
- 
-
-
-$WebPage->appendContent("
-                    <img src='img/svg/dblue_transition.svg' class='dblue_transition_end'>
-                </div>");
-*/
 
 $WebPage->appendContent("<div class='event_main'>
                     <div class='event_left'>
