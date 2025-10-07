@@ -87,3 +87,33 @@
     width: 2vw;
     display:initial;
 }
+
+/* Adhérer au BDE */
+
+.part_adherer{
+    display:flex;
+    flex-direction: column;
+    margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.part_adh_logo, .part_image{
+    display:flex;
+    justify-content: center;
+}
+
+.part_adh_description{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part_adh_description h2{
+    color:#00bff3;
+}
+
+.part_adh_description p{
+    font-size: 2rem;
+}
