@@ -1,6 +1,7 @@
 <?php
 
 use Html\WebPage as WebPage;
+use Entity\Exception\ParameterException;
 
 $WebPage = new WebPage("À propos");
 
@@ -32,7 +33,7 @@ $WebPage -> appendContent("<div class='page_top'>
                 </div>
 
                 <div class='about_form_box'>
-                    <form action='action.php' method='post' class='about_form'>
+                    <form action='' method='post' class='about_form'>
                         <div class='about_form_top'>
 
                             <div class='about_form_name'>
@@ -45,6 +46,11 @@ $WebPage -> appendContent("<div class='page_top'>
                                 <input type='email' id='email' name='email' required>
                             </div>
 
+                        </div>
+
+                        <div class='about_form_bottom'>
+                            <label for='subject'>SUJET</label>
+                            <textarea id='subject' name='subject' rows='1' cols='50' required></textarea>
                         </div>
 
                         <div class='about_form_bottom'>
