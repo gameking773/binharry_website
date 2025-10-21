@@ -28,11 +28,11 @@ $WebPage -> appendContent("
     </h1>
 
     <p class='ml_content'>
-        Nom de l'hébergeur<br>
+        Webstrator - OctoGency<br>
         <br>
-        Statut de l'entreprise + revenu :<br>
-        N° TVA :<br>
-        Adresse du siège social de l'hébergeur :
+        SARL au capital de 1000€<br>
+        N° TVA : FR79 844 727 594<br>
+        Lieu-dit En Roc - 81100 Castres
     </p>
 
     <h1 class='ml_titre'>
