@@ -51,6 +51,7 @@
     opacity:0%;
     display:flex;
     transition:0.3s;
+    font-size:1.2rem;
 }
 
 .card_overlay:hover .card_name, .card_overlay:hover .card_date{
