@@ -68,7 +68,7 @@ $WebPage -> appendContent("<div class='page_top'>
                     </div>
                     
                     <div class='part_adh_description'>
-                        <h2>Adhérer au BDE</h2>
+                        <h2 class='part_title'>Adhérer au BDE</h2>
                         <p>
                             Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€ <br>&nbsp<br>
                             Les avantages qui vous sont donnés avec une adhésion sont : <br>
