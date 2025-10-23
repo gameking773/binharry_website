@@ -21,8 +21,8 @@ $WebPage -> appendContent("<div class='page_top'>
                             <img src='img/logo-emblem.png'>
                         </a>
                         <p class='part_text'>
-                            &nbsp&nbsp&nbsp Voici Emblem Reims, une entreprise qui vous propose des tas de cadeaux et de réductions, que ce soit dans les restos, les cafés, les loisirs, et mêmes pour les vacances d'Hiver 🌨️ ! <br>&nbsp<br>
-                            &nbsp&nbsp&nbsp Pour bénéficier de ces réductions, c'est simple : <br>
+                            &nbsp&nbsp&nbspVoici Emblem Reims, une entreprise qui vous propose des tas de cadeaux et de réductions, que ce soit dans les restos, les cafés, les loisirs, et mêmes pour les vacances d'Hiver 🌨️ ! <br>&nbsp<br>
+                            &nbsp&nbsp&nbspPour bénéficier de ces réductions, c'est simple :<br>
                             A partir du 8 Septembre, la billetterie sera ouverte dans la bio instagram de emblem reims. <br>&nbsp<br>
                             &nbsp&nbsp&nbsp La carte coute 19.90€ (pour déjà 200€ de cadeaux), vous devrez choisir un relai pour récupérer votre carte, évidemment, il s'agira de notre local.
                         </p>
@@ -41,9 +41,9 @@ $WebPage -> appendContent("<div class='page_top'>
                             <img src='img/logo-holy.png'>
                         </a>
                         <p class='part_text'>
-                            &nbsp&nbsp&nbsp Votre BDE favori a aussi conclu une collaboration commerciale avec Holy !<br>&nbsp<br>
-                            &nbsp&nbsp&nbsp Avec le code &#34BINHARRY5&#34, vous soutenez le BDE tout en économisant 5% sur votre première commande !<br>&nbsp<br>
-                            &nbsp&nbsp&nbsp Déjà commandé chez eux ? On a quelque chose pour ça aussi. Avec le code &#34BINHARRY&#34, économisez 10% sur votre commande !
+                            &nbsp&nbsp&nbspVotre BDE favori a aussi conclu une collaboration commerciale avec Holy !<br>&nbsp<br>
+                            &nbsp&nbsp&nbspAvec le code &#34BINHARRY5&#34, vous soutenez le BDE tout en économisant 5% sur votre première commande !<br>&nbsp<br>
+                            &nbsp&nbsp&nbspDéjà commandé chez eux ? On a quelque chose pour ça aussi. Avec le code &#34BINHARRY&#34, économisez 10% sur votre commande !
                         </p>
                     </div>
                 </div>
