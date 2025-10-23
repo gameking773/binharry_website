@@ -1,11 +1,9 @@
 .content p {
-    padding-left: 10%;
-    padding-right: 10%;
     font-size: 1.5rem;
 }
 
 .part_title {
-    padding-left:5%;
+    padding-left:1%;
 }
 
 /* Première partie */
@@ -95,8 +93,6 @@
     display:flex;
     flex-direction: column;
     margin-top:5%;
-    margin-left:5%;
-    margin-right:5%;
 }
 
 .part_adh_logo, .part_image{
@@ -116,5 +112,14 @@
 }
 
 .part_adh_description p{
-    font-size: 2rem;
+    width:50%;
+}
+
+.blue_dblue_grad h2, .blue_dblue_grad p, .news h2, .news p{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.liste_avantages{
+    font-size:1.5rem;
 }

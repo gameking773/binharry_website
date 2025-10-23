@@ -26,10 +26,11 @@ $WebPage -> appendContent("<div class='page_top'>
                     <img src='img/svg/blue_dblue_grad.svg'>
                     <h2 class='part_title'>Qui sommes-nous ?</h2>
                     <p>
-                        Nous sommes Bin'Harry, le BDE du département Informatique de l'IUT de Reims Champagne Ardennes, association déclarée devant la préfécture Marnaise.
-                        La présidence de notre association est renouvelée démocratiquement par les étudiants du département chaque année à la suite d'un vote.
+                        Nous sommes Bin'Harry, le Bureau des Étudiants (BDE) du département Informatique de l’IUT de Reims Champagne Ardenne. Notre association, déclarée devant la préfecture marnaise, représente les étudiants du département et œuvre tout au long de l’année pour dynamiser la vie étudiante. La présidence de notre structure est renouvelée chaque année de manière démocratique, grâce à un vote organisé parmi les étudiants du département, garantissant ainsi un fonctionnement participatif et équitable.
                         <br><br>
-                        Ce site vous permet de voir les archives des évènements passés, de vous informer des prochaines dates évènementielles, et de nous contacter par mail.
+                        Notre site a pour vocation de rassembler et partager les différents aspects de la vie associative du département. Vous y trouverez les archives de nos évènements passés, retraçant les moments forts qui ont marqué la communauté étudiante, ainsi que les prochaines dates évènementielles à venir, pour ne rien manquer des activités organisées par votre BDE.
+                        <br><br>
+                        Enfin, cet espace vous offre la possibilité de nous contacter facilement par mail, afin d’échanger, de poser vos questions ou de proposer des idées de projets pour enrichir encore davantage la vie au sein du département Informatique.
                     </p>
                 </div>
 
@@ -61,13 +62,29 @@ $WebPage -> appendContent("<div class='page_top'>
                     <div class='part_adh_description'>
                         <h2>Adhérer au BDE</h2>
                         <p>
-                            Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€ <br>&nbsp<br>
-                            Les avantages qui vous sont donnés avec une adhésion sont : <br>
-                            &nbsp&nbsp&nbsp • Avantages lors des tombola <br>
-                            &nbsp&nbsp&nbsp • Prix préférentiels lors des sorties <br>
-                            &nbsp&nbsp&nbsp • Un rôle qui fait joli sur discord, afin de montrer à quel point vous êtes riches. <br>
-                            &nbsp&nbsp&nbsp • Articles gratuits lors des ventes (crêpes, boissons etc.) <br>&nbsp<br>
-                            Si vous avez des suggestions d'avantages, n'hésitez pas à nous les soumettre <br>&nbsp<br>
+                            Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€
+                            <br><br>
+                            Les avantages qui vous sont donnés avec une adhésion sont :
+                        </p>
+
+                        <ul class='liste_avantages'>
+                            <li>
+                                Avantages lors des tombolas
+                            </li>
+                            <li>
+                                Prix préférentiels lors des sorties
+                            </li>
+                            <li>
+                                Un rôle qui fait joli sur discord, afin de montrer à quel point vous êtes riches.
+                            </li>
+                            <li>
+                                Articles gratuits lors des ventes (crêpes, boissons etc.)
+                            </li>
+                        </ul>
+
+                        <p>
+                            Si vous avez des suggestions d'avantages, n'hésitez pas à nous les soumettre
+                            <br><br>
                             Pour adhérer, contactez nous!
                         </p>
                     </div>
