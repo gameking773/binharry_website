@@ -28,6 +28,8 @@ $WebPage -> appendContent("<div class='page_top'>
                     <p>
                         Nous sommes Bin'Harry, le BDE du département Informatique de l'IUT de Reims Champagne Ardennes, association déclarée devant la préfécture Marnaise.
                         La présidence de notre association est renouvelée démocratiquement par les étudiants du département chaque année à la suite d'un vote.
+                        <br><br>
+                        Ce site vous permet de voir les archives des évènements passés, de vous informer des prochaines dates évènementielles, et de nous contacter par mail.
                     </p>
                 </div>
 
@@ -51,24 +53,13 @@ $WebPage -> appendContent("<div class='page_top'>
                     <img src='img/easter-egg.png'>
                 </a>
                 
-                <div class='triplebox'>
-                    <img src='img/svg/triplebox_start.svg'>
-                    <div class='triplebox_main'>
-                        <h2 class='part_title'>Le site du BDE</h2>
-                        <p>
-                            Ce site vous permet de voir les archives des évènements passés, de vous informer des prochaines dates évènementielles, et de nous contacter par mail.
-                        </p>
-                    </div>
-                    <img src='img/svg/triplebox_end.svg'>
-                </div>
-                
                 <div class='part_adherer'>
                     <div class='part_adh_logo'>
                         <img src='img/header_logo_box.png'>
                     </div>
                     
                     <div class='part_adh_description'>
-                        <h2 class='part_title'>Adhérer au BDE</h2>
+                        <h2>Adhérer au BDE</h2>
                         <p>
                             Adhérer au BDE, c'est nous soutenir et nous aider à financer les futurs événements pour seulement 5€ <br>&nbsp<br>
                             Les avantages qui vous sont donnés avec une adhésion sont : <br>
@@ -80,6 +71,17 @@ $WebPage -> appendContent("<div class='page_top'>
                             Pour adhérer, contactez nous!
                         </p>
                     </div>
-                </div>");
+                </div>
+                ");
 
 echo $WebPage -> toHTML();
+
+/* Bloc inutilisée
+<div class='triplebox'>
+    <img src='img/svg/triplebox_start.svg'>
+    <div class='triplebox_main'>
+        
+    </div>
+    <img src='img/svg/triplebox_end.svg'>
+</div>
+*/
