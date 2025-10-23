@@ -45,7 +45,7 @@ h2 {
     padding: 0;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
-    font-size: 8rem; 
+    font-size: 6rem; 
 }
 
 /** Partie design de fond */
@@ -138,8 +138,6 @@ h2 {
 .news{
     color:white;
     margin-top: -2px;
-    padding-left: 5%;
-    padding-right: 5%;
     display: flex;
     background: #00BFF3;
     flex-direction: column;

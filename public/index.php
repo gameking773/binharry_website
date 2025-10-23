@@ -15,7 +15,7 @@ $WebPage -> appendContent("<div class='page_top'>
                 </div>
 
                 <div class='news'>
-                    <h2>NEWS</h2>
+                    <h2 class='part_title'>NEWS</h2>
                     <p>
                         Aucune news pour le moment.
                     </p>
@@ -24,7 +24,7 @@ $WebPage -> appendContent("<div class='page_top'>
 
                 <div class='blue_dblue_grad'>
                     <img src='img/svg/blue_dblue_grad.svg'>
-                    <h2>Qui sommes-nous ?</h2>
+                    <h2 class='part_title'>Qui sommes-nous ?</h2>
                     <p>
                         Nous sommes Bin'Harry, le BDE du département Informatique de l'IUT de Reims Champagne Ardennes, association déclarée devant la préfécture Marnaise.
                         La présidence de notre association est renouvelée démocratiquement par les étudiants du département chaque année à la suite d'un vote.
@@ -34,7 +34,7 @@ $WebPage -> appendContent("<div class='page_top'>
                 <div class='doublebox'>
                     <img src='img/svg/doublebox_start.svg'>
                     <div class='doublebox_main'>
-                        <h2>Notre objectif</h2>
+                        <h2 class='part_title'>Notre objectif</h2>
                         <p>
                             Créer une bonne cohésion entre les étudiants du département, peu importe l'année d'étude, grace à des sorties organisées régulièrement chaques mois, traditionnellement le Jeudi soir, sois simplement au bar, sois dans des activités plus ludiques telles qu'au Laser Game, au Bowling et bien plus. 
                             L'évènement le plus connu étant la LAN, organisée chaque année, un évènement qui permet aux étudiants comme aux professeurs de jouer aux jeux vidéos ensembles durant un après midi entier en Avril.
@@ -54,7 +54,7 @@ $WebPage -> appendContent("<div class='page_top'>
                 <div class='triplebox'>
                     <img src='img/svg/triplebox_start.svg'>
                     <div class='triplebox_main'>
-                        <h2>Le site du BDE</h2>
+                        <h2 class='part_title'>Le site du BDE</h2>
                         <p>
                             Ce site vous permet de voir les archives des évènements passés, de vous informer des prochaines dates évènementielles, et de nous contacter par mail.
                         </p>
