@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Entity;
 
 use Database\MyPdo;
-use \DateTime as DateTime;
+use DateTime;
 use Entity\Exception\EntityNotFoundException;
 use PDO;
 
@@ -77,12 +77,11 @@ class Event
             <<<'SQL'
                 SELECT eventId, eventNom, eventDate, eventDesc, afficheId
                 FROM evenement
-                WHERE eventId = ?
+                WHERE eventId = :id
                 SQL
         );
 
-        $stmt->bindParam(1, $id);
-        $stmt->execute();
+        $stmt->execute(['id' => $id]);
 
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$row) {

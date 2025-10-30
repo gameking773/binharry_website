@@ -15,32 +15,6 @@ class Affiche
     private string $minia;
 
     /**
-     * Returns the instance of Affiche which is identified by the id in parameter
-     *
-     * @param $id int id to search
-     * @return Affiche that corresponds to the id
-     */
-    public static function findById(int $id): Affiche
-    {
-        $stmt = MyPDO::getInstance()->prepare(
-            <<<'SQL'
-            SELECT afficheId, jpeg, minia
-            FROM affiche
-            WHERE afficheId = ?
-            SQL
-        );
-
-        $stmt->bindParam(1, $id);
-        $stmt->execute();
-
-        $stmt->setFetchMode(PDO::FETCH_CLASS, Affiche::class);
-        if (($affiche = $stmt->fetch()) === false) {
-            throw new EntityNotFoundException();
-        }
-        return $affiche;
-    }
-
-    /**
      * Get the value of afficheId
      */
     public function getAfficheId(): int
@@ -63,4 +37,29 @@ class Affiche
     {
         return $this->minia;
     }
-};
+
+    /**
+     * Returns the instance of Affiche which is identified by the id in parameter
+     *
+     * @param $id int id to search
+     * @return Affiche that corresponds to the id
+     */
+    public static function findById(int $id): Affiche
+    {
+        $stmt = MyPDO::getInstance()->prepare(
+            <<<SQL
+            SELECT afficheId, jpeg, minia
+            FROM affiche
+            WHERE afficheId = :id
+            SQL
+        );
+
+        $stmt->execute(['id' => $id]);
+
+        $stmt->setFetchMode(PDO::FETCH_CLASS, Affiche::class);
+        if (($affiche = $stmt->fetch()) === false) {
+            throw new EntityNotFoundException();
+        }
+        return $affiche;
+    }
+}

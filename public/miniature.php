@@ -7,9 +7,8 @@ use Entity\Exception\ParameterException;
 use Entity\Affiche as Affiche;
 
 try {
-    if (isset($_GET["afficheId"]) && ctype_digit($_GET["afficheId"])) {
-        $afficheId = $_GET["afficheId"];
-        $afficheId = intval($afficheId);
+    if (isset($_GET["afficheId"]) && is_integer($_GET["afficheId"])) {
+        $afficheId = (int) $_GET["afficheId"];
         $affiche = Affiche::findById($afficheId);
         header('Content-Type: image/jpeg');
         echo $affiche->getMinia();

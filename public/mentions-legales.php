@@ -6,7 +6,7 @@ $WebPage = new WebPage("Mentions légales");
 
 $WebPage -> appendCssUrl("style/mentions-legales.css");
 
-$WebPage -> appendContent("
+$WebPage -> appendContent(<<<HTML
     <p class='ml_content'>
         Merci de lire attentivement ces informations légales avant de consulter le site.
     </p>
@@ -69,6 +69,6 @@ $WebPage -> appendContent("
         <br>
         En aucun cas le BDE, ses employés ou les tiers mentionnés dans son site ne pourront être tenus responsables, au titre d’une action en responsabilité contractuelle, en responsabilité délictuelle ou de tout autre action, de tout dommage direct ou indirect, incident ou accessoire, ou de quelque nature qu’il soit ou de tout préjudice, notamment, de nature financier, résultant de l’utilisation de son site ou d’une quelconque information obtenue sur son site.
     </p>
-");
+HTML);
 
 echo $WebPage -> toHTML();
