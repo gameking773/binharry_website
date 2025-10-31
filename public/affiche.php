@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use Entity\Exception\EntityNotFoundException;
 use Entity\Exception\ParameterException;
-use Entity\Affiche;
+use Entity\Affiche as Affiche;
 
 try {
-    if (isset($_GET["afficheId"]) && is_integer(intval($_GET["afficheId"]))) {
+    if (isset($_GET["afficheId"]) && is_int(intval($_GET["afficheId"]))) {
         $afficheId = (int) $_GET["afficheId"];
         $affiche = Affiche::findById($afficheId);
         header('Content-Type: image/jpeg');
@@ -19,7 +19,8 @@ try {
 } catch (ParameterException) {
     http_response_code(400);
 } catch (EntityNotFoundException) {
-    http_response_code(404);
+    header('Content-Type: image/jpeg');
+    echo file_get_contents("img/affiche_placeholder.png");
 } catch (Exception) {
     http_response_code(500);
 }

@@ -19,7 +19,8 @@ try {
 } catch (ParameterException) {
     http_response_code(400);
 } catch (EntityNotFoundException) {
-    http_response_code(404);
+    header('Content-Type: image/jpeg');
+    echo file_get_contents("img/affiche_placeholder_minia.png");
 } catch (Exception) {
     http_response_code(500);
 }
