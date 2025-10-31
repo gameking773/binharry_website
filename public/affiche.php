@@ -7,7 +7,7 @@ use Entity\Exception\ParameterException;
 use Entity\Affiche;
 
 try {
-    if (isset($_GET["afficheId"]) && is_integer($_GET["afficheId"])) {
+    if (isset($_GET["afficheId"]) && is_integer(intval($_GET["afficheId"]))) {
         $afficheId = (int) $_GET["afficheId"];
         $affiche = Affiche::findById($afficheId);
         header('Content-Type: image/jpeg');
