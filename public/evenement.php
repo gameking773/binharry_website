@@ -31,7 +31,7 @@ $affiche = "<img src='affiche.php' alt='cover'>";
 
 $affiche = $event->getAfficheId() != null
     ? "<img src='affiche.php?afficheId={$event->getAfficheId()}' alt='cover'>"
-    : "";
+    : "<img src='affiche.php' alt='cover'>";
 
 $WebPage->appendContent(<<<HTML
     <div class='event_main'>
