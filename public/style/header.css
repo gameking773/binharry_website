@@ -50,12 +50,13 @@ header{
     display:flex;
     flex:1;
     justify-content: flex-end;
+    list-style:none;
 }
 
-li{
-    list-style:none;
-    padding-right:5%;
+.header__sections li{
+    padding-right:4%;
 }
+
 /*
 @media screen and (max-width: 1600px) {
     li{
