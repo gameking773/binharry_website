@@ -10,7 +10,7 @@ Pour utiliser les requêtes SQL, lancez Apache et MySQL avec le panneau de contr
 
 ### Rafraichissement de composer
 
-```
+```shell 
 composer du
 composer install
 ```
@@ -40,6 +40,27 @@ Pour pouvoir utiliser les requêtes SQL, sur **Windows**, téléchargez XAMPP : 
 Le rendu devrait être : `$cfg['Servers'][$i]['host'] = '127.0.0.1:3306';` à cette ligne.
 
 Importez la BDD en vous connectant à phpMyAdmin (bouton Admin du module MySQL, ou `http://localhost/phpmyadmin/`).
+
+## Lancer un serveur local
+
+### Sous Windows
+Après avoir suivi les informations ci-dessus, exécutez la commande suivante :
+```shell
+composer start
+```
+
+### Sous Linux
+
+Pour lancer un serveur local sous linux, exécutez la commande suivante :
+```shell
+composer start:linux
+```
+
+> Important
+> Si vous n'arrivez pas a lancer le serveur local sous linux, exécutez cette command puis réssayer
+> ```shell
+> setfacl -m u::rwx bin/run-server.sh
+> ```
 
 ## Informations annexes
 

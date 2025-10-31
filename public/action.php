@@ -40,15 +40,15 @@ else{
 
     if ($search == "sandron") {
         $webpage->appendContent(<<<HTML
-        <style>
-            img{
-            width : 100%;
-            height : 100%;
-            }
-        </style>
-        <a href="https://iut-info.univ-reims.fr/users/sandron/restricted/">
-            <img src='img/sandron.gif'>
-        </a>
+            <style>
+                img{
+                width : 100%;
+                height : 100%;
+                }
+            </style>
+            <a href="https://iut-info.univ-reims.fr/users/sandron/restricted/">
+                <img src='img/sandron.gif' alt="sandron_gif">
+            </a>
         HTML);
     }
     else {

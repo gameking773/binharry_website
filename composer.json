@@ -20,6 +20,10 @@
         "start": [
             "Composer\\Config::disableProcessTimeout",
             "bin/run-server.bat"
+        ],
+        "start:linux": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.sh"
         ]
     }
 }

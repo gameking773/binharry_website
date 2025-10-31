@@ -156,7 +156,7 @@ class WebPage
      */
     public function toHTML(): string
     {
-        $page = <<<HTML
+        return <<<HTML
             <!doctype html>
             <html lang="fr">
                 <head>
@@ -214,18 +214,15 @@ class WebPage
                 </body>
             </html>
         HTML;
-        return $page;
     }
 
     public function escapeString(string $string): string
     {
-        $string = htmlspecialchars($string, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5 | ENT_DISALLOWED, 'UTF-8');
-        return $string;
+        return htmlspecialchars($string, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5 | ENT_DISALLOWED, 'UTF-8');
     }
 
     public function getLastModification(): string
     {
-        $date = date("j/n/o - G:i", getlastmod());
-        return $date;
+        return date("j/n/o - G:i", getlastmod());
     }
 }
