@@ -1,3 +1,23 @@
+.content p {
+    font-size: 1.5rem;
+}
+
+.part_title {
+    padding-left:1%;
+}
+
+/* Partie news */
+
+.news{
+    color:white;
+    margin-top: -2px;
+    display: flex;
+    background: #00BFF3;
+    flex-direction: column;
+    font-size: 2rem;
+    padding-bottom:25vh;
+}
+
 /* Première partie */
 
 .blue_dblue_grad{
@@ -12,13 +32,7 @@
     height: 8vw;
 }
 
-.blue_dblue_grad p, .blue_dblue_grad h2{
-    padding-left:3%;
-    padding-right:3%;
-}
-
 .blue_dblue_grad p{
-    font-size:2rem;
     padding-bottom:10%;
 }
 
@@ -39,12 +53,10 @@
 }
 
 .doublebox_main p{
-    font-size:2rem;
     text-align: justify;
-    padding-right:5%;
 }
 
-/* Troisième partie */
+/* Troisième partie --désactivée
 
 .triplebox{
     display:flex;
@@ -60,9 +72,10 @@
 }
 
 .triplebox_main p{
-    font-size:2rem;
     text-align: justify;
 }
+
+*/
 
 /* Désactivation de l'intéraction avec les images svg */
 
@@ -94,8 +107,6 @@
     display:flex;
     flex-direction: column;
     margin-top:5%;
-    margin-left:5%;
-    margin-right:5%;
 }
 
 .part_adh_logo, .part_image{
@@ -115,5 +126,14 @@
 }
 
 .part_adh_description p{
-    font-size: 2rem;
+    width:50%;
+}
+
+.blue_dblue_grad h2, .blue_dblue_grad p, .news h2, .news p{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.liste_avantages{
+    font-size:1.5rem;
 }
