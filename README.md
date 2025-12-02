@@ -67,3 +67,5 @@ composer start:linux
 Les images sur les cartes dans la page evenements.php ont pour résolution 501x573.
 
 Les images SVG (fait via Inkscape) ont une propriété par défaut qui est dérangeante, on ne peut pas les resize avec le CSS. Pour régler ce problème, il suffit d'ajouter la ligne `preserveAspectRatio="none"` après la ligne **viewBox** (dans n'importe quelle éditeur de texte) pour que le problème se règle.
+
+Vous aurez besoin d'une application tierce qui donne accès à une base de données de test (ex. XAMPP) pour accéder aux pages evenement.php et evenements.php. Les autres pages restent accessibles sans l'accès à la base de données.
